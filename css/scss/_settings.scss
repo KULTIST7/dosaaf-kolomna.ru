@@ -1,0 +1,71 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+.page {
+	height: 100%;
+	font-family: var(--main-font-family, sans-serif);
+	-webkit-text-size-adjust: 100%;
+}
+
+.page__body {
+	margin: 0;
+	min-width: 320px;
+	min-height: 100%;
+	font-size: 16px;
+	background-color: var(--body-bg-color);
+}
+
+section {
+	background: var(--body-bg-color);
+}
+
+.section-box {
+	margin: 0 auto;
+	max-width: 1540px;
+	width: 100%;
+	padding: 0 20px;
+
+	@media (max-width: 1024px) {
+		padding: 0 14px;
+	}
+}
+
+.site-container {
+	overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+}
+
+.btn-reset {
+	border: none;
+	padding: 0;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.list-reset {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 var(--container-offset);
+	max-width: var(--container-width);
+}
+
+@media (max-width: 480px) {
+	.container {
+		padding: 0 15px;
+	}
+}
+
+.title {
+	margin: 0;
+}

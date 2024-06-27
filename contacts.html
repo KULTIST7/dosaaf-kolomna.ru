@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="theme-color" content="#111111" />
+		<title>Kolomna</title>
+		<link rel="stylesheet" href="css/vendor.css" />
+		<link rel="stylesheet" href="js/fancybox/fancybox.css">
+		<link rel="stylesheet" href="css/main.css" />
+		<script src="js/fancybox/fancybox.umd.js"></script>
+		<script src="js/jquery/jquery-3.6.0.min.js"></script>
+		<script src="https://api-maps.yandex.ru/v3/?apikey=ed8ac0e3-d0f9-44ef-93a7-7882bedb5828&amp;lang=ru_RU"></script>
+		<script defer src="js/main.js"></script>
+	</head>
+	<body class="page__body">
+		<div class="site-container">
+			<header class="header">
+				<div class="container header__container">
+					<div class="header__body">
+						<button class="burger header__burger">
+							<span class="burger__line"></span>
+						</button>
+						<img
+							src="images/logo.png"
+							class="image header__logo"
+							width="134"
+							height="134"
+							alt="Логотип компании"
+						/>
+						<div class="header__top">
+							<nav class="nav header__nav" title="Навигационная панель">
+								<ul class="nav__list list-reset">
+									<li class="nav__item"><a href="about.html" class="nav__link">Об организации</a></li>
+									<li class="nav__item">
+										<a href="faq.html" class="nav__link">Часто задаваемые вопросы</a>
+									</li>
+									<li class="nav__item"><a href="reviews.html" class="nav__link">Отзывы</a></li>
+									<li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+								</ul>
+							</nav>
+							<div class="header__container-right">
+								<div class="header__social">
+									<a href="#" target="_blank" class="header__link-social">
+										<img src="images/svg/vk.svg" alt="" class="header__icon header__icon-vk">
+									</a>
+									<a href="#" target="_blank" class="header__link-social">
+										<img src="images/svg/tg.svg" alt="" class="header__icon header__icon-tg">
+									</a>
+									<a href="#" target="_blank" class="header__link-social">
+										<img src="images/svg/whatsapp.svg" alt="" class="header__icon header__icon-whatsapp">
+									</a>
+								</div>
+								<a href="tel:" class="btn-reset header__call">
+									<img
+										src="images/phone.svg"
+										class="image header__icon-phone"
+										width="20"
+										height="20"
+										alt="Иконка телефона"
+									/>
+									<div class="header__container-call">
+										<div class="header__text-call header__text-call-primary">8 (999) 000-55-10</div>
+										<div class="header__text-call header__text-call-secondary">заказать звонок</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="header__bottom">
+							<ul class="list-reset header__list">
+								<li class="header__item">
+									<a href="categories.html" class="header__link">Подготовка водителей</a>
+								</li>
+								<li class="header__item">
+									<a href="#x" class="header__link header__link-active">Услуги и цены</a>
+								</li>
+								<li class="header__item">
+									<a href="#" class="header__link">Записаться</a>
+								</li>
+								<li class="header__item">
+									<a href="#" class="header__link header__link-online">Online обучение</a>
+								</li>
+							</ul>
+							<a href="promotions.html" class="header__discount">
+								<img
+									src="images/discount.svg"
+									class="image header__icon-discount"
+									width="19"
+									height="21"
+									alt="Иконка скидки"
+								/>
+								Акции и скидки
+							</a>
+						</div>
+					</div>
+				</div>
+			</header>
+            <main>
+                <div class="inner-content">
+                    <div class="inner-content__bg">
+                        <img src="images/inner-content-bg-1.jpg" alt="">
+                    </div>
+                    <div class="inner-content__content">
+                        <div class="nav-chain">
+                            <a href="index.html">ДОСААФ России /</a>
+                            <a href="#">Услуги и цены /</a>
+                            <p>Контакты</p>
+                        </div>
+                        <h1 class="title comms__title">Контакты</h1>
+                    </div>
+                </div>
+                <section class="contacts">
+                    <div class="section-box">
+                        <div class="contacts__content">
+                            <div class="contacts__info">
+                                <div class="contacts__item">
+                                    <div>
+                                        <img src="images/svg/map-point.svg" alt="">
+                                    </div>
+                                    <p class="address">ул.Астахова, д.2</p>
+                                </div>
+                                <div class="contacts__item">
+                                    <div>
+                                        <img src="images/svg/phone-icon.svg" alt="">
+                                    </div>
+                                    <p class="phone">8(999)-000-55-10</p>
+                                </div>
+                                <div class="contacts__item">
+                                    <div>
+                                        <img src="images/svg/schedule-icon.svg" alt="">
+                                    </div>
+                                    <p>пн-сб 8:00 до 17:00</p>
+                                </div>
+                                <div class="contacts__item">
+                                    <div>
+                                        <img src="images/svg/mail-icon.svg" alt="">
+                                    </div>
+                                    <a href="mailto:dosaaf2005@mail.ru">dosaaf2005@mail.ru</a>
+                                </div>
+                                <div class="contacts__socials">
+                                    <a href=""><img src="images/svg/vk-2.svg" alt=""></a>
+                                    <a href=""><img src="images/svg/tg-2.svg" alt=""></a>
+                                    <a href=""><img src="images/svg/whatsapp-2.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="contacts__map" id="contacts-map"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="administration">
+					<div class="section-box">
+						<h2>Администрация</h2>
+						<div class="administration__content">
+							<div class="staff__slide staff__slide-visible">
+								<img
+									src="images/administration-img-1.png"
+									class="image staff__image"
+									width="282"
+									height="282"
+									alt="Фото инсутрктора"
+								/>
+								<h4 class="title staff__name">Кольцов Анатолий Вячеславович</h4>
+								<h3 class="title staff__category">Начальник автошколы</h3>
+							</div>
+							<div class="staff__slide staff__slide-visible">
+								<img
+									src="images/administration-img-2.png"
+									class="image staff__image"
+									width="282"
+									height="282"
+									alt="Фото инсутрктора"
+								/>
+								<h4 class="title staff__name">Светлова Елена Николаевна</h4>
+								<h3 class="title staff__category">Главный бухгалтер</h3>
+							</div>
+							<div class="staff__slide staff__slide-visible">
+								<img
+									src="images/administration-img-3.png"
+									class="image staff__image"
+									width="282"
+									height="282"
+									alt="Фото инсутрктора"
+								/>
+								<h4 class="title staff__name">Чакрова Ирина Владимировна</h4>
+								<h3 class="title staff__category">Инспектор отдела кадров</h3>
+							</div>
+							<div class="staff__slide staff__slide-visible">
+								<img
+									src="images/administration-img-4.png"
+									class="image staff__image"
+									width="282"
+									height="282"
+									alt="Фото инсутрктора"
+								/>
+								<h4 class="title staff__name">Дульцева Анастасия Евгеньевна</h4>
+								<h3 class="title staff__category">Администратор учебного класса</h3>
+							</div>
+						</div>
+					</div>
+                </section>
+				<section class="comms">
+					<div class="container comms__container">
+						<h2 class="title comms__title">Отзывы</h2>
+						<div class="swiper comms__slider">
+							<button
+								class="btn-reset btn-control btn-control-prev btn-control-shadowless comms__button-control comms__button-control-prev"
+							>
+								<img src="images/svg/right-arrow.svg" alt="" class="btn-control__arrow">
+							</button>
+							<div class="swiper-wrapper comms__wrapper">
+								<div class="swiper-slide comms__slide">
+									<div class="comms__container-image">
+										<img
+											src="images/comms-image-1.png"
+											class="image comms__image"
+											width="120"
+											height="120"
+											alt="Аватар клиента"
+										/>
+									</div>
+									<div class="comms__body">
+										<h4 class="title comms__date">24.04.2023</h4>
+										<h3 class="title comms__name">Анастасия Куманева</h3>
+										<p class="title comms__paragraph">
+											Прошла обучение в ДОСААФ, всем довольна. Теория разбирается очень доступно и
+											на жизненных примерах Далекоооооооооооо, за словесными.
+										</p>
+										<a
+											href="#"
+											class="btn-control btn-control-next btn-control-shadowless comms__link"
+										>
+											<img src="images/svg/right-arrow.svg" alt="" class="btn-control__arrow">
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide comms__slide">
+									<div class="comms__container-image">
+										<img
+											src="images/comms-image-2.png"
+											class="image comms__image"
+											width="120"
+											height="120"
+											alt="Аватар клиента"
+										/>
+									</div>
+									<div class="comms__body">
+										<h4 class="title comms__date">24.04.2023</h4>
+										<h3 class="title comms__name">Регинка Анфиногенова</h3>
+										<p class="title comms__paragraph">
+											Прошла обучение в ДОСААФ, всем довольна. Теория разбирается очень доступно и
+											на жизненных примерах Далекоооооооооо, за словесными.
+										</p>
+										<a
+											href="#"
+											class="btn-control btn-control-next btn-control-shadowless comms__link"
+										>
+											<img src="images/svg/right-arrow.svg" alt="" class="btn-control__arrow">
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide comms__slide">
+									<div class="comms__container-image">
+										<img
+											src="images/comms-image-3.png"
+											class="image comms__image"
+											width="120"
+											height="120"
+											alt="Аватар клиента"
+										/>
+									</div>
+									<div class="comms__body">
+										<h4 class="title comms__date">24.04.2023</h4>
+										<h3 class="title comms__name">Арина Цыплакова</h3>
+										<p class="title comms__paragraph">
+											Прошла обучение в ДОСААФ, всем довольна. Теория разбирается очень доступно и
+											на жизненных примерах Далекоооооооооооо, за словесными.
+										</p>
+										<a
+											href="#"
+											class="btn-control btn-control-next btn-control-shadowless comms__link"
+										>
+											<img src="images/svg/right-arrow.svg" alt="" class="btn-control__arrow">
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide comms__slide">
+									<div class="comms__container-image">
+										<img
+											src="images/comms-image-3.png"
+											class="image comms__image"
+											width="120"
+											height="120"
+											alt="Аватар клиента"
+										/>
+									</div>
+									<div class="comms__body">
+										<h4 class="title comms__date">24.04.2023</h4>
+										<h3 class="title comms__name">Арина Цыплакова</h3>
+										<p class="title comms__paragraph">
+											Прошла обучение в ДОСААФ, всем довольна. Теория разбирается очень доступно и
+											на жизненных примерах Далекооооооооо, за словесными.
+										</p>
+										<a
+											href="#"
+											class="btn-control btn-control-next btn-control-shadowless comms__link"
+										>
+											<img src="images/svg/right-arrow.svg" alt="" class="btn-control__arrow">
+										</a>
+									</div>
+								</div>
+							</div>
+							<button
+								class="btn-reset btn-control btn-control-next btn-control-shadowless comms__button-control comms__button-control-next"
+							>
+								<img src="images/svg/right-arrow.svg" alt="" class="btn-control__arrow">
+							</button>
+						</div>
+						<a href="#" target="_blank" class="comms__link-all">
+							все отзывы
+							<img src="images/svg/refresh.svg" alt="" class="comms__icon">
+						</a>
+					</div>
+				</section>
+				<section class="location">
+					<div class="location__map" id="location-map"></div>
+				</section>
+				<section class="menu">
+					<div class="menu__container">
+						<button class="btn-reset menu__close">
+							<img src="images/close.svg" class="image menu__close" width="44" height="44" alt="#" />
+						</button>
+						<ul class="list-reset header__list menu__list">
+							<li class="header__item menu__item">
+								<a href="categories.html" class="header__link menu__link">Подготовка водителей</a>
+							</li>
+							<li class="header__item menu__item">
+								<a href="#" class="header__link menu__link">Услуги и цены</a>
+							</li>
+							<li class="header__item menu__item">
+								<a href="#" class="header__link menu__link">Записаться</a>
+							</li>
+							<li class="header__item menu__item">
+								<a href="#" class="header__link menu__link header__link-online">Online обучение</a>
+							</li>
+							<li class="header__item menu__item">
+								<a href="promotions.html" class="footer__link-discount menu__link-discount">
+									Акции и скидки
+									<img
+										src="images/discount.svg"
+										class="image footer__icon-discount"
+										width="19"
+										height="21"
+										alt="Иконка скидки"
+									/>
+								</a>
+							</li>
+							<li class="header__item menu__item">
+								<a href="about.html" class="header__link menu__link menu__link-capitalize">Об организации</a>
+							</li>
+							<li class="header__item menu__item">
+								<a href="faq.html" class="header__link menu__link menu__link-capitalize"
+									>Часто задаваемый вопросы</a
+								>
+							</li>
+							<li class="header__item menu__item">
+								<a href="reviews.html" class="header__link menu__link menu__link-capitalize">Отзывы</a>
+							</li>
+							<li class="header__item menu__item">
+								<a href="contacts.html" class="header__link menu__link menu__link-capitalize">Контакты</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__container-phone menu__phone">
+						<a href="tel:" class="btn-reset footer__call">
+							<img
+								src="images/phone.svg"
+								class="image footer__icon-phone"
+								width="20"
+								height="20"
+								alt="Иконка телефона"
+							/>
+							<div class="footer__container-call">
+								<div class="footer__text-call footer__text-call-primary">8 (999) 000-55-10</div>
+								<div class="footer__text-call footer__text-call-secondary">заказать звонок</div>
+							</div>
+						</a>
+						<div class="footer__social">
+							<a href="#" target="_blank" class="footer__link-social">
+								<img src="images/svg/vk.svg" alt="" class="footer__icon footer__icon-vk">
+							</a>
+							<a href="#" target="_blank" class="footer__link-social">
+								<img src="images/svg/tg.svg" alt="" class="footer__icon footer__icon-tg">
+							</a>
+							<a href="#" target="_blank" class="footer__link-social">
+								<img src="images/svg/whatsapp.svg" alt="" class="footer__icon footer__icon-whatsapp">
+							</a>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="footer__container-top">
+					<div class="container footer__container footer__top">
+						<div class="footer__container-logo">
+							<img
+								src="images/logo-footer.png"
+								class="image footer__logo-kolomna"
+								width="190"
+								height="190"
+								alt="Логотип компании"
+							/>
+							<ul class="list-reset footer__list">
+								<li class="footer__item">
+									<a href="categories.html" class="footer__link">Подготовка водителей</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Услуги и цены</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Записаться</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link footer__link-online">Online обучение</a>
+								</li>
+								<li class="footer__item footer__discount">
+									<a href="promotions.html" class="footer__link-discount">
+										<img
+											src="images/discount.svg"
+											class="image footer__icon-discount"
+											width="19"
+											height="21"
+											alt="Иконка скидки"
+										/>
+										Акции и скидки</a
+									>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__container-phone">
+							<a href="tel:" class="btn-reset footer__call">
+								<img
+									src="images/phone.svg"
+									class="image footer__icon-phone"
+									width="20"
+									height="20"
+									alt="Иконка телефона"
+								/>
+								<div class="footer__container-call">
+									<div class="footer__text-call footer__text-call-primary">8 (999) 000-55-10</div>
+									<div class="footer__text-call footer__text-call-secondary">заказать звонок</div>
+								</div>
+							</a>
+							<div class="footer__social">
+								<a href="#" target="_blank" class="footer__link-social">
+									<img src="images/svg/vk.svg" alt="" class="footer__icon footer__icon-vk">
+								</a>
+								<a href="#" target="_blank" class="footer__link-social">
+									<img src="images/svg/tg.svg" alt="" class="footer__icon footer__icon-tg">
+								</a>
+								<a href="#" target="_blank" class="footer__link-social">
+									<img src="images/svg/whatsapp.svg" alt="" class="footer__icon footer__icon-whatsapp">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container footer__container footer__container-body">
+					<p class="footer__paragraph">
+						Профессиональное образовательное учреждение «Коломенская школа Общероссийской
+						общественно-государственной организации «Добровольное общество содействия армии, авиации и флоту
+						России»
+					</p>
+					<p class="footer__paragraph">140405, Московская область, г. Коломна, ул. Астахова, д.2</p>
+					<p class="footer__paragraph">ИНН 5022014895, ОГРН 1035004251677,</p>
+					<p class="footer__paragraph">тел. 8(999)000-55-10</p>
+					<div class="footer__row">
+						<a href="#" class="footer__link-policy">Положение об обработке персональных данных</a>
+						<img
+							src="images/luxar-logo.png"
+							class="image footer__logo-luxar"
+							width="100"
+							height="70"
+							alt="Логотип luxar"
+						/>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

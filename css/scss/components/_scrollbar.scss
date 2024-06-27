@@ -1,0 +1,14 @@
+body {
+    &::-webkit-scrollbar {
+        width: 12px;
+
+        &-track {
+            background: var(--dark-grey-color);
+        }
+
+        &-thumb {
+            background-color: var(--yellow-color);
+            border-radius: 20px;
+        }
+    }
+}

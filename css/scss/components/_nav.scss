@@ -1,0 +1,26 @@
+.nav {
+	&__list {
+		display: flex;
+		align-items: center;
+		gap: 60px;
+	}
+	&__link {
+		font-family: var(--gilroy-family);
+		font-weight: 500;
+		font-size: 14px;
+		color: var(--grey-color);
+		text-decoration: none;
+		transition: color 0.3s ease;
+		&:hover {
+			color: var(--white-color);
+		}
+	}
+}
+
+@media (max-width: 1440px) {
+	.nav {
+		&__list {
+			gap: 25px;
+		}
+	}
+}

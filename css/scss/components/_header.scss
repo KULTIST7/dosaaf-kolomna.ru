@@ -1,0 +1,268 @@
+.header {
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+	&-halfed {
+		& .header {
+			&__top {
+				display: none;
+			}
+			&__bottom {
+				margin-top: 6px;
+			}
+			&__logo {
+				top: -8px;
+				width: 98px;
+				height: 98px;
+			}
+		}
+	}
+	&__container {
+		&-call {
+			display: flex;
+			justify-content: flex-end;
+			flex-direction: column;
+		}
+		&-right {
+			display: flex;
+			gap: 20px 40px;
+		}
+	}
+	&__body {
+		position: relative;
+	}
+	&__logo {
+		position: absolute;
+		top: 10px;
+		left: 22px;
+		z-index: 20;
+	}
+	&__top {
+		padding: 12px 42px 12px 234px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-left: 234px;
+	}
+	&__bottom {
+		align-items: center;
+		padding: 8px 42px 8px 234px;
+		background: rgba(0, 0, 0, 0.5);
+		box-shadow: 0 4px 60px 0 rgba(14, 39, 51, 0.3);
+		backdrop-filter: blur(15px);
+		border-radius: 30px;
+		color: var(--white-color);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 20px;
+	}
+	&__social {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+	&__list {
+		display: flex;
+		gap: 59px;
+	}
+	&__link {
+		display: block;
+		font-size: 16px;
+		line-height: 19px;
+		color: var(--white-color);
+		transition: color 0.3s ease;
+		text-decoration: none;
+		text-transform: uppercase;
+		padding: 24px 0;
+		white-space: nowrap;
+		&-active {
+			padding: 24px 48px;
+			color: var(--yellow-color) !important;
+			background: transparent;
+			backdrop-filter: blur(1px);
+			border: 1px solid transparent;
+			border-left: 0;
+			border-right: 0;
+			border-radius: 17px;
+			border-image: linear-gradient(
+				90deg,
+				rgba(255, 0, 0, 0) 0%,
+				rgba(255, 0, 0, 0) 20%,
+				var(--yellow-color) 50%,
+				rgba(255, 0, 0, 0) 80%,
+				rgba(255, 0, 0, 0) 100%
+			);
+			border-image-slice: 1;
+		}
+		&-online {
+			color: var(--blue-color) !important;
+		}
+		&:hover {
+			color: var(--blue-color);
+		}
+		&-icon {
+			display: flex;
+		}
+		&-social {
+			display: flex;
+		}
+	}
+	&__icon {
+		transition: fill 0.3s ease, stroke 0.3s ease;
+		cursor: pointer;
+		&-vk {
+			fill: var(--white-color);
+			width: 19px;
+			height: 11px;
+			&:hover {
+				fill: var(--white-color);
+			}
+		}
+		&-tg {
+			stroke: var(--white-color);
+			fill: transparent;
+			width: 17px;
+			height: 15px;
+			&:hover {
+				stroke: var(--white-color);
+			}
+		}
+		&-whatsapp {
+			fill: var(--white-color);
+			width: 17px;
+			height: 17px;
+			&:hover {
+				fill: var(--white-color);
+			}
+		}
+	}
+	&__call {
+		display: flex;
+		gap: 10px;
+		text-decoration: none;
+		&:hover {
+			& .header__text-call-secondary {
+				filter: brightness(1.5);
+			}
+		}
+	}
+	&__text {
+		&-call {
+			font-family: var(--gilroy-family);
+			font-weight: 500;
+			text-align: right;
+			white-space: nowrap;
+			&-primary {
+				font-size: 18px;
+				color: var(--white-color);
+			}
+			&-secondary {
+				font-size: 14px;
+				color: var(--blue-color);
+				margin-top: -6px;
+				transition: filter 0.2s ease;
+			}
+		}
+	}
+	&__discount {
+		display: flex;
+		align-items: center;
+		gap: 11px;
+		text-transform: uppercase;
+		color: var(--yellow-color);
+		font-size: 16px;
+		line-height: 19px;
+		white-space: nowrap;
+		cursor: pointer;
+		text-decoration: none;
+	}
+}
+
+@media (max-width: 1440px) {
+	.header {
+		&__container {
+			&-right {
+				column-gap: 26px;
+			}
+		}
+		&__list {
+			gap: 25px;
+		}
+		&__top {
+			padding-right: 12px;
+		}
+		&__top,
+		&__bottom {
+			padding-left: 180px;
+		}
+		&__link {
+			padding: 20px 0;
+			&-active {
+				padding: 20px;
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.header {
+		background: rgba(0, 0, 0, 0.5);
+		box-shadow: 0 4px 60px 0 rgba(14, 39, 51, 0.3);
+		backdrop-filter: blur(5px);
+		padding: 7px 0;
+		&__container {
+			max-width: 808px;
+			&-right {
+				gap: 20px 48px;
+			}
+		}
+		&__body {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			gap: 25px;
+		}
+		&__top {
+			padding: 0;
+			align-items: center;
+			gap: 25px;
+			width: 100%;
+		}
+		&__logo {
+			width: 67px;
+			height: 67px;
+			position: static;
+		}
+		&__call {
+			gap: 0;
+		}
+		&__icon {
+			&-phone {
+				width: 27px;
+				height: 27px;
+			}
+		}
+		&__nav,
+		&__bottom,
+		&__text-call {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.header {
+		&__body {
+			gap: 20px;
+		}
+	}
+}
+
+@media (max-width: 350px) {
+	.header {
+		&__container-right {
+			gap: 20px 26px;
+		}
+	}
+}

@@ -1,0 +1,24 @@
+.reviews {
+    margin-bottom: 238px;
+
+    @media (max-width: 1024px) {
+        margin-bottom: 70px;
+    }
+
+    .inner-content + & {
+        @media (max-width: 1024px) {
+            margin-top: -92px;
+            position: relative;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 53px 0.8%;
+
+        @media (max-width: 1024px) {
+            gap: 24px 2%;
+        }
+    }
+}

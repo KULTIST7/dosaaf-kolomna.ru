@@ -1,0 +1,23 @@
+:root {
+	// base
+	--main-font-family: "Kelson Sans", sans-serif;
+	--gilroy-family: "Gilroy", sans-serif;
+	--bebas-family: "Bebas", sans-serif;
+	--content-width: 1500px;
+	--container-offset: 20px;
+	--container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+	// colors
+	--white-color: #fff;
+	--black-color: #1e1e1e;
+	--yellow-color: #fcb527;
+	--light-grey-color: #e5eaec;
+	--grey-color: #acacac;
+	--dark-grey-color: #a1b0b5;
+	--light-red-color: #ba0000;
+	--red-color: #ff0000;
+	--dark-red-color: #9c1717;
+	--blue-color: #0089d0;
+	--bullet-color: #020202;
+	--body-bg-color: #f3f6f9;
+}

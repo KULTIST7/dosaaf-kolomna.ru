@@ -1,0 +1,47 @@
+.menu {
+	display: none;
+	position: fixed;
+	inset: 81px 0 0;
+	background: rgb(3, 3, 3, 0.98);
+	backdrop-filter: blur(5px);
+	padding: 14px 18px 14px 32px;
+	z-index: 1000;
+	transform: translateX(-100%);
+	transition: transform 0.3s ease;
+	&-visible {
+		transform: translate(0);
+	}
+	&__close {
+		display: block;
+		margin-left: auto;
+		cursor: pointer;
+	}
+	&__list {
+		flex-direction: column;
+		gap: 28px;
+	}
+	&__link {
+		padding: 0;
+		&-discount {
+			gap: 14px;
+			text-transform: uppercase;
+		}
+		&-capitalize {
+			text-transform: lowercase;
+			&::first-letter {
+				text-transform: uppercase;
+			}
+		}
+	}
+	&__phone {
+		margin-top: 50px;
+		flex-direction: row-reverse;
+		align-items: flex-start;
+	}
+}
+
+@media (max-width: 1024px) {
+	.menu {
+		display: unset;
+	}
+}

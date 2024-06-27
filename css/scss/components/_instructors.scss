@@ -1,0 +1,26 @@
+.instructors {
+    margin-bottom: 205px;
+
+    @media (max-width: 1024px) {
+        margin-bottom: 135px;
+    }
+
+    .inner-content + & {
+        @media (max-width: 1024px) {
+            margin-top: -36px;
+            position: relative;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 150px 1.33%;
+        padding-top: 182px;
+
+        @media (max-width: 1024px) {
+            gap: 11px;
+            padding-top: 50px;
+        }
+    }
+}

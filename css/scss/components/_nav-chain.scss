@@ -1,0 +1,26 @@
+.nav-chain {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    @media (max-width: 1024px) {
+        position: absolute;
+        top: -43px;
+    }
+
+    &>* {
+        font-size: 14px;
+        color: #AAB3B6;
+        line-height: 14px;
+        text-decoration: none;
+        margin: 0;
+    }
+
+    &>a {
+        transition: all .1s linear;
+
+        &:hover {
+            color: var(--dark-grey-color);
+        }
+    }
+}

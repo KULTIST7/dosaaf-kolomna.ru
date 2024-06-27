@@ -1,0 +1,22 @@
+.location {
+	&__map {
+		height: 233px;
+	}
+	&__container {
+		&-marker {
+			transform: translate(-50%, -50%);
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+	&__text {
+		margin: -2px 0 0;
+		font-size: 12px;
+		line-height: 120%;
+		color: var(--black-color);
+		white-space: nowrap;
+		background: var(--white-color);
+		padding: 2px;
+	}
+}

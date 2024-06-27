@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="theme-color" content="#111111" />
+		<title>Kolomna</title>
+		<link rel="stylesheet" href="css/vendor.css" />
+		<link rel="stylesheet" href="js/fancybox/fancybox.css">
+		<link rel="stylesheet" href="css/main.css" />
+		<script src="js/fancybox/fancybox.umd.js"></script>
+		<script src="js/jquery/jquery-3.6.0.min.js"></script>
+		<script src="https://api-maps.yandex.ru/v3/?apikey=ed8ac0e3-d0f9-44ef-93a7-7882bedb5828&amp;lang=ru_RU"></script>
+		<script defer src="js/main.js"></script>
+	</head>
+	<body class="page__body">
+		<div class="site-container">
+			<header class="header">
+				<div class="container header__container">
+					<div class="header__body">
+						<button class="burger header__burger">
+							<span class="burger__line"></span>
+						</button>
+						<img
+							src="images/logo.png"
+							class="image header__logo"
+							width="134"
+							height="134"
+							alt="Логотип компании"
+						/>
+						<div class="header__top">
+							<nav class="nav header__nav" title="Навигационная панель">
+								<ul class="nav__list list-reset">
+									<li class="nav__item"><a href="about.html" class="nav__link">Об организации</a></li>
+									<li class="nav__item">
+										<a href="faq.html" class="nav__link">Часто задаваемые вопросы</a>
+									</li>
+									<li class="nav__item"><a href="reviews.html" class="nav__link">Отзывы</a></li>
+									<li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+								</ul>
+							</nav>
+							<div class="header__container-right">
+								<div class="header__social">
+									<a href="#" target="_blank" class="header__link-social">
+										<img src="images/svg/vk.svg" alt="" class="header__icon header__icon-vk">
+									</a>
+									<a href="#" target="_blank" class="header__link-social">
+										<img src="images/svg/tg.svg" alt="" class="header__icon header__icon-tg">
+									</a>
+									<a href="#" target="_blank" class="header__link-social">
+										<img src="images/svg/whatsapp.svg" alt="" class="header__icon header__icon-whatsapp">
+									</a>
+								</div>
+								<a href="tel:" class="btn-reset header__call">
+									<img
+										src="images/phone.svg"
+										class="image header__icon-phone"
+										width="20"
+										height="20"
+										alt="Иконка телефона"
+									/>
+									<div class="header__container-call">
+										<div class="header__text-call header__text-call-primary">8 (999) 000-55-10</div>
+										<div class="header__text-call header__text-call-secondary">заказать звонок</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="header__bottom">
+							<ul class="list-reset header__list">
+								<li class="header__item">
+									<a href="categories.html" class="header__link">Подготовка водителей</a>
+								</li>
+								<li class="header__item">
+									<a href="#x" class="header__link header__link-active">Услуги и цены</a>
+								</li>
+								<li class="header__item">
+									<a href="#" class="header__link">Записаться</a>
+								</li>
+								<li class="header__item">
+									<a href="#" class="header__link header__link-online">Online обучение</a>
+								</li>
+							</ul>
+							<a href="promotions.html" class="header__discount">
+								<img
+									src="images/discount.svg"
+									class="image header__icon-discount"
+									width="19"
+									height="21"
+									alt="Иконка скидки"
+								/>
+								Акции и скидки
+							</a>
+						</div>
+					</div>
+				</div>
+			</header>
+            <main>
+                <div class="inner-content">
+                    <div class="inner-content__bg">
+                        <img src="images/inner-content-bg-1.jpg" alt="">
+                    </div>
+                    <div class="inner-content__content">
+                        <div class="nav-chain">
+                            <a href="index.html">ДОСААФ России /</a>
+                            <a href="#">Услуги и цены /</a>
+                            <p>Об организации</p>
+                        </div>
+                        <h1 class="title comms__title">Об организации</h1>
+                    </div>
+                </div>
+                <section class="about">
+                    <div class="section-box">
+                        <div class="about__nav">
+                            <div class="about__nav__item">
+                                <a href="#"></a>
+                                <div>
+                                    <img src="images/about-nav-img-1.jpg" alt="">
+                                </div>
+                                <h3>Администрация</h3>
+                            </div>
+                            <div class="about__nav__item">
+                                <a href="#"></a>
+                                <div>
+                                    <img src="images/about-nav-img-2.jpg" alt="">
+                                </div>
+                                <h3>Инструкторы</h3>
+                            </div>
+                            <div class="about__nav__item">
+                                <a href="#"></a>
+                                <div>
+                                    <img src="images/about-nav-img-3.jpg" alt="">
+                                </div>
+                                <h3>Отзывы</h3>
+                            </div>
+                            <div class="about__nav__item">
+                                <a href="#"></a>
+                                <div>
+                                    <img src="images/about-nav-img-4.jpg" alt="">
+                                </div>
+                                <h3>Учебные классы</h3>
+                            </div>
+                            <div class="about__nav__item">
+                                <a href="#"></a>
+                                <div>
+                                    <img src="images/about-nav-img-5.jpg" alt="">
+                                </div>
+                                <h3>Сведения об образовательной организации</h3>
+                            </div>
+                            <div class="about__nav__item">
+                                <a href="#"></a>
+                                <div>
+                                    <img src="images/about-nav-img-6.jpg" alt="">
+                                </div>
+                                <h3>Преподаватели</h3>
+                            </div>
+                            <div class="about__nav__item">
+                                <a href="#"></a>
+                                <div>
+                                    <img src="images/about-nav-img-7.jpg" alt="">
+                                </div>
+                                <h3>Автопарк</h3>
+                            </div>
+                            <div class="about__nav__item">
+                                <a href="#"></a>
+                                <div>
+                                    <img src="images/about-nav-img-8.jpg" alt="">
+                                </div>
+                                <h3>Часто задаваемые вопросы</h3>
+                            </div>
+                        </div>
+                        <div class="about__text">
+                            <img src="images/logo.png" alt="">
+							<p><span>ДОСААФ России</span> - это общероссийская сеть автомобильных, объединенных технических, специальных школ и клубов, насчитывающая не одну сотню образовательных учреждений на всей территории Российской Федерации и имеющая богатейший 90-летний опыт подготовки водительских кадров. ДОСААФ России ежегодно выпускает из своих стен около 600 тысяч специалистов, что составляет одну четверть всех подготовленных водителей в стране!</p>
+							<p>
+								<br><br>Первая добровольная оборонная организация - Военно-научное общество (ВНО) было создано в 1920 году. Оно ставило своей задачей разработку военно-научных проблем и широкую пропаганду военных знаний среди трудящихся.
+								<br>Учитывая широкий размах массовой оборонной работы и необходимость усиления военно-патриотического воспитания населения, подготовки его к обороне страны, 27 июля 1926 года Постановлением Совета народных комиссаров СССР Военно-научное общество было переименовано в Общество содействия обороне СССР (ОСО).
+								В марте 1923 года создается массовое добровольное Общество друзей Воздушного флота (ОДВФ), которое поставило перед собой задачу активно содействовать развитию отечественной авиации.
+								Вскоре появилась еще одна оборонно-массовая организация – Добровольное общество друзей химической обороны и промышленности (Доброхим СССР).
+							</p>
+                        </div>
+						<div class="about__photos">
+							<a href="images/about-photo-1.jpg" data-fancybox="about-photos"><img src="images/about-photo-1.jpg" alt=""></a>
+							<a href="images/about-photo-2.jpg" data-fancybox="about-photos"><img src="images/about-photo-2.jpg" alt=""></a>
+							<a href="images/about-photo-3.jpg" data-fancybox="about-photos"><img src="images/about-photo-3.jpg" alt=""></a>
+							<a href="images/about-photo-4.jpg" data-fancybox="about-photos"><img src="images/about-photo-4.jpg" alt=""></a>
+							<a href="images/about-photo-5.jpg" data-fancybox="about-photos"><img src="images/about-photo-5.jpg" alt=""></a>
+							<a href="images/about-photo-6.jpg" data-fancybox="about-photos"><img src="images/about-photo-6.jpg" alt=""></a>
+							<a href="images/about-photo-7.jpg" data-fancybox="about-photos"><img src="images/about-photo-7.jpg" alt=""></a>
+							<a href="images/about-photo-8.jpg" data-fancybox="about-photos"><img src="images/about-photo-8.jpg" alt=""></a>
+						</div>
+						<div class="about__dates">
+							<ul>
+								<li><span>17.08.1939</span> В г. Коломна создан автомотоклуб ОСОАВИАХИМ</li>
+								<li><span>01.01.1966</span> Автомотоклуб переименован в спортивно-технический клуб</li>
+								<li><span>26.01.1967</span> Организован Коломенский морской клуб ДОСААФ</li>
+								<li><span>01.10.1967</span> Начало обучения призывников по программе «Электромеханик передвижных электростанций»								</li>
+								<li><span>21.01.1968</span> Организован спортивный клуб с секциями: водно-моторная, судомодельная и морского многоборья</li>
+								<li><span>01.01.1974</span> Создана Коломенская автомобильная школа ДОСААФ</li>
+								<li><span>01.01.1975</span> Морской клуб перименован в Коломенскую морскую школу ДОСААФ</li>
+							</ul>
+							<ul>
+								<li><span>25.03.1984</span> При морской школе открыт юношеский военно-патриотический клуб «Тайфун»</li>
+								<li><span>25.03.1989</span> Коломенский морской школе присвоено звание «Образцовая»</li>
+								<li><span>01.01.1992</span> На базе автомобильной и морской школ создана Коломенская объединенная техническая школа Московского областного Совета РОСТО (ДОСААФ)</li>
+								<li><span>01.10.2012</span> Коломенская объединенная техническая школа Московского областного Совета РОСТО (ДОСААФ) переименована в негосударственное образовательное частное учреждение Коломенская школа ДОСААФ России</li>
+								<li><span>26.01.2016</span> Негосударственное образовательное частное учреждение Коломенская школа ДОСААФ России переименовано в профессиональное образовательное учреждение Коломенская школа ДОСААФ России</li>
+							</ul>
+						</div>
+						<div class="about__text">
+							<p>
+								Поскольку практическая деятельность ОДВФ и Доброхима была тесно связана, то уже в мае 1925 года они объединились в одну организацию – АВИАХИМ.
+								<br><br>В кружках военных знаний население овладевало стрелковым оружием, изучало ручную гранату, основы тактики. В кружках военно-технической направленности велось изучение артиллерийского, пулеметного вооружения, устройство танка, телеграфного аппарата, бронемашины, средств защиты от химического оружия. Успешно работали военно-морские клубы.Общество содействия обороне, авиационному и химическому строительству (ОСОАВИАХИМ) было создано 23 января 1927 года на совместном заседании делегатов Всесоюзного съезда АВИАХИМа и участников пленума ОСО. Главной задачей общество считало патриотическое воспитание своих членов и подготовку их защите Родины.
+								<br><br>С первых дней своего существования ОСОАВИАХИМ развернул широкую авиационную пропаганду. Стране, находившейся во враждебном окружении, нужен был свой воздушный флот и летные кадры. Брошенный в массы лозунг «Комсомолец, на самолет!» стал девизом молодежи 30-х.
+								<br><br>Поскольку практическая деятельность ОДВФ и Доброхима была тесно связана, то уже в мае 1925 года они объединились в одну организацию – АВИАХИМ.
+								<br><br>В кружках военных знаний население овладевало стрелковым оружием, изучало ручную гранату, основы тактики. В кружках военно-технической направленности велось изучение артиллерийского, пулеметного вооружения, устройство танка, телеграфного аппарата, бронемашины, средств защиты от химического оружия. Успешно работали военно-морские клубы.Общество содействия обороне, авиационному и химическому строительству (ОСОАВИАХИМ) было создано 23 января 1927 года на совместном заседании делегатов Всесоюзного съезда АВИАХИМа и участников пленума ОСО. Главной задачей общество считало патриотическое воспитание своих членов и подготовку их защите Родины.
+								<br><br>С первых дней своего существования ОСОАВИАХИМ развернул широкую авиационную пропаганду. Стране, находившейся во враждебном окружении, нужен был свой воздушный флот и летные кадры. Брошенный в массы лозунг «Комсомолец, на самолет!» стал девизом молодежи 30-х.Поскольку практическая деятельность ОДВФ и Доброхима была тесно связана, то уже в мае 1925 года они объединились в одну организацию – АВИАХИМ.
+								<br><br>В кружках военных знаний население овладевало стрелковым оружием, изучало ручную гранату, основы тактики. В кружках военно-технической направленности велось изучение артиллерийского, пулеметного вооружения, устройство танка, телеграфного аппарата, бронемашины, средств защиты от химического оружия. Успешно работали военно-морские клубы.Общество содействия обороне, авиационному и химическому строительству (ОСОАВИАХИМ) было создано 23 января 1927 года на совместном заседании делегатов Всесоюзного съезда АВИАХИМа и участников пленума ОСО. Главной задачей общество считало патриотическое воспитание своих членов и подготовку их защите Родины.
+								<br><br>С первых дней своего существования ОСОАВИАХИМ развернул широкую авиационную пропаганду. Стране, находившейся во враждебном окружении, нужен был свой воздушный флот и летные кадры. Брошенный в массы лозунг «Комсомолец, на самолет!» стал девизом молодежи 30-х.
+							</p>
+						</div>
+                    </div>
+                </section>
+				<section class="comms">
+					<div class="container comms__container">
+						<h2 class="title comms__title">Отзывы</h2>
+						<div class="swiper comms__slider">
+							<button
+								class="btn-reset btn-control btn-control-prev btn-control-shadowless comms__button-control comms__button-control-prev"
+							>
+								<img src="images/svg/right-arrow.svg" alt="" class="btn-control__arrow">
+							</button>
+							<div class="swiper-wrapper comms__wrapper">
+								<div class="swiper-slide comms__slide">
+									<div class="comms__container-image">
+										<img
+											src="images/comms-image-1.png"
+											class="image comms__image"
+											width="120"
+											height="120"
+											alt="Аватар клиента"
+										/>
+									</div>
+									<div class="comms__body">
+										<h4 class="title comms__date">24.04.2023</h4>
+										<h3 class="title comms__name">Анастасия Куманева</h3>
+										<p class="title comms__paragraph">
+											Прошла обучение в ДОСААФ, всем довольна. Теория разбирается очень доступно и
+											на жизненных примерах Далекоооооооооооо, за словесными.
+										</p>
+										<a
+											href="#"
+											class="btn-control btn-control-next btn-control-shadowless comms__link"
+										>
+											<img src="images/svg/right-arrow.svg" alt="" class="btn-control__arrow">
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide comms__slide">
+									<div class="comms__container-image">
+										<img
+											src="images/comms-image-2.png"
+											class="image comms__image"
+											width="120"
+											height="120"
+											alt="Аватар клиента"
+										/>
+									</div>
+									<div class="comms__body">
+										<h4 class="title comms__date">24.04.2023</h4>
+										<h3 class="title comms__name">Регинка Анфиногенова</h3>
+										<p class="title comms__paragraph">
+											Прошла обучение в ДОСААФ, всем довольна. Теория разбирается очень доступно и
+											на жизненных примерах Далекоооооооооо, за словесными.
+										</p>
+										<a
+											href="#"
+											class="btn-control btn-control-next btn-control-shadowless comms__link"
+										>
+											<img src="images/svg/right-arrow.svg" alt="" class="btn-control__arrow">
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide comms__slide">
+									<div class="comms__container-image">
+										<img
+											src="images/comms-image-3.png"
+											class="image comms__image"
+											width="120"
+											height="120"
+											alt="Аватар клиента"
+										/>
+									</div>
+									<div class="comms__body">
+										<h4 class="title comms__date">24.04.2023</h4>
+										<h3 class="title comms__name">Арина Цыплакова</h3>
+										<p class="title comms__paragraph">
+											Прошла обучение в ДОСААФ, всем довольна. Теория разбирается очень доступно и
+											на жизненных примерах Далекоооооооооооо, за словесными.
+										</p>
+										<a
+											href="#"
+											class="btn-control btn-control-next btn-control-shadowless comms__link"
+										>
+											<img src="images/svg/right-arrow.svg" alt="" class="btn-control__arrow">
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide comms__slide">
+									<div class="comms__container-image">
+										<img
+											src="images/comms-image-3.png"
+											class="image comms__image"
+											width="120"
+											height="120"
+											alt="Аватар клиента"
+										/>
+									</div>
+									<div class="comms__body">
+										<h4 class="title comms__date">24.04.2023</h4>
+										<h3 class="title comms__name">Арина Цыплакова</h3>
+										<p class="title comms__paragraph">
+											Прошла обучение в ДОСААФ, всем довольна. Теория разбирается очень доступно и
+											на жизненных примерах Далекооооооооо, за словесными.
+										</p>
+										<a
+											href="#"
+											class="btn-control btn-control-next btn-control-shadowless comms__link"
+										>
+											<img src="images/svg/right-arrow.svg" alt="" class="btn-control__arrow">
+										</a>
+									</div>
+								</div>
+							</div>
+							<button
+								class="btn-reset btn-control btn-control-next btn-control-shadowless comms__button-control comms__button-control-next"
+							>
+								<img src="images/svg/right-arrow.svg" alt="" class="btn-control__arrow">
+							</button>
+						</div>
+						<a href="#" target="_blank" class="comms__link-all">
+							все отзывы
+							<img src="images/svg/refresh.svg" alt="" class="comms__icon">
+						</a>
+					</div>
+				</section>
+                <section class="location">
+					<div class="location__map" id="location-map"></div>
+				</section>
+				<section class="menu">
+					<div class="menu__container">
+						<button class="btn-reset menu__close">
+							<img src="images/close.svg" class="image menu__close" width="44" height="44" alt="#" />
+						</button>
+						<ul class="list-reset header__list menu__list">
+							<li class="header__item menu__item">
+								<a href="categories.html" class="header__link menu__link">Подготовка водителей</a>
+							</li>
+							<li class="header__item menu__item">
+								<a href="#" class="header__link menu__link">Услуги и цены</a>
+							</li>
+							<li class="header__item menu__item">
+								<a href="#" class="header__link menu__link">Записаться</a>
+							</li>
+							<li class="header__item menu__item">
+								<a href="#" class="header__link menu__link header__link-online">Online обучение</a>
+							</li>
+							<li class="header__item menu__item">
+								<a href="promotions.html" class="footer__link-discount menu__link-discount">
+									Акции и скидки
+									<img
+										src="images/discount.svg"
+										class="image footer__icon-discount"
+										width="19"
+										height="21"
+										alt="Иконка скидки"
+									/>
+								</a>
+							</li>
+							<li class="header__item menu__item">
+								<a href="about.html" class="header__link menu__link menu__link-capitalize">Об организации</a>
+							</li>
+							<li class="header__item menu__item">
+								<a href="faq.html" class="header__link menu__link menu__link-capitalize"
+									>Часто задаваемый вопросы</a
+								>
+							</li>
+							<li class="header__item menu__item">
+								<a href="reviews.html" class="header__link menu__link menu__link-capitalize">Отзывы</a>
+							</li>
+							<li class="header__item menu__item">
+								<a href="contacts.html" class="header__link menu__link menu__link-capitalize">Контакты</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__container-phone menu__phone">
+						<a href="tel:" class="btn-reset footer__call">
+							<img
+								src="images/phone.svg"
+								class="image footer__icon-phone"
+								width="20"
+								height="20"
+								alt="Иконка телефона"
+							/>
+							<div class="footer__container-call">
+								<div class="footer__text-call footer__text-call-primary">8 (999) 000-55-10</div>
+								<div class="footer__text-call footer__text-call-secondary">заказать звонок</div>
+							</div>
+						</a>
+						<div class="footer__social">
+							<a href="#" target="_blank" class="footer__link-social">
+								<img src="images/svg/vk.svg" alt="" class="footer__icon footer__icon-vk">
+							</a>
+							<a href="#" target="_blank" class="footer__link-social">
+								<img src="images/svg/tg.svg" alt="" class="footer__icon footer__icon-tg">
+							</a>
+							<a href="#" target="_blank" class="footer__link-social">
+								<img src="images/svg/whatsapp.svg" alt="" class="footer__icon footer__icon-whatsapp">
+							</a>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="footer__container-top">
+					<div class="container footer__container footer__top">
+						<div class="footer__container-logo">
+							<img
+								src="images/logo-footer.png"
+								class="image footer__logo-kolomna"
+								width="190"
+								height="190"
+								alt="Логотип компании"
+							/>
+							<ul class="list-reset footer__list">
+								<li class="footer__item">
+									<a href="categories.html" class="footer__link">Подготовка водителей</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Услуги и цены</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Записаться</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link footer__link-online">Online обучение</a>
+								</li>
+								<li class="footer__item footer__discount">
+									<a href="promotions.html" class="footer__link-discount">
+										<img
+											src="images/discount.svg"
+											class="image footer__icon-discount"
+											width="19"
+											height="21"
+											alt="Иконка скидки"
+										/>
+										Акции и скидки</a
+									>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__container-phone">
+							<a href="tel:" class="btn-reset footer__call">
+								<img
+									src="images/phone.svg"
+									class="image footer__icon-phone"
+									width="20"
+									height="20"
+									alt="Иконка телефона"
+								/>
+								<div class="footer__container-call">
+									<div class="footer__text-call footer__text-call-primary">8 (999) 000-55-10</div>
+									<div class="footer__text-call footer__text-call-secondary">заказать звонок</div>
+								</div>
+							</a>
+							<div class="footer__social">
+								<a href="#" target="_blank" class="footer__link-social">
+									<img src="images/svg/vk.svg" alt="" class="footer__icon footer__icon-vk">
+								</a>
+								<a href="#" target="_blank" class="footer__link-social">
+									<img src="images/svg/tg.svg" alt="" class="footer__icon footer__icon-tg">
+								</a>
+								<a href="#" target="_blank" class="footer__link-social">
+									<img src="images/svg/whatsapp.svg" alt="" class="footer__icon footer__icon-whatsapp">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container footer__container footer__container-body">
+					<p class="footer__paragraph">
+						Профессиональное образовательное учреждение «Коломенская школа Общероссийской
+						общественно-государственной организации «Добровольное общество содействия армии, авиации и флоту
+						России»
+					</p>
+					<p class="footer__paragraph">140405, Московская область, г. Коломна, ул. Астахова, д.2</p>
+					<p class="footer__paragraph">ИНН 5022014895, ОГРН 1035004251677,</p>
+					<p class="footer__paragraph">тел. 8(999)000-55-10</p>
+					<div class="footer__row">
+						<a href="#" class="footer__link-policy">Положение об обработке персональных данных</a>
+						<img
+							src="images/luxar-logo.png"
+							class="image footer__logo-luxar"
+							width="100"
+							height="70"
+							alt="Логотип luxar"
+						/>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

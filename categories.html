@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="theme-color" content="#111111" />
+		<title>Kolomna</title>
+		<link rel="stylesheet" href="css/vendor.css" />
+		<link rel="stylesheet" href="js/fancybox/fancybox.css">
+		<link rel="stylesheet" href="css/main.css" />
+		<script src="js/fancybox/fancybox.umd.js"></script>
+		<script src="js/jquery/jquery-3.6.0.min.js"></script>
+		<script src="https://api-maps.yandex.ru/v3/?apikey=ed8ac0e3-d0f9-44ef-93a7-7882bedb5828&amp;lang=ru_RU"></script>
+		<script defer src="js/main.js"></script>
+	</head>
+	<body class="page__body">
+		<div class="site-container">
+			<header class="header">
+				<div class="container header__container">
+					<div class="header__body">
+						<button class="burger header__burger">
+							<span class="burger__line"></span>
+						</button>
+						<img
+							src="images/logo.png"
+							class="image header__logo"
+							width="134"
+							height="134"
+							alt="Логотип компании"
+						/>
+						<div class="header__top">
+							<nav class="nav header__nav" title="Навигационная панель">
+								<ul class="nav__list list-reset">
+									<li class="nav__item"><a href="about.html" class="nav__link">Об организации</a></li>
+									<li class="nav__item">
+										<a href="faq.html" class="nav__link">Часто задаваемые вопросы</a>
+									</li>
+									<li class="nav__item"><a href="reviews.html" class="nav__link">Отзывы</a></li>
+									<li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+								</ul>
+							</nav>
+							<div class="header__container-right">
+								<div class="header__social">
+									<a href="#" target="_blank" class="header__link-social">
+										<img src="images/svg/vk.svg" alt="" class="header__icon header__icon-vk">
+									</a>
+									<a href="#" target="_blank" class="header__link-social">
+										<img src="images/svg/tg.svg" alt="" class="header__icon header__icon-tg">
+									</a>
+									<a href="#" target="_blank" class="header__link-social">
+										<img src="images/svg/whatsapp.svg" alt="" class="header__icon header__icon-whatsapp">
+									</a>
+								</div>
+								<a href="tel:" class="btn-reset header__call">
+									<img
+										src="images/phone.svg"
+										class="image header__icon-phone"
+										width="20"
+										height="20"
+										alt="Иконка телефона"
+									/>
+									<div class="header__container-call">
+										<div class="header__text-call header__text-call-primary">8 (999) 000-55-10</div>
+										<div class="header__text-call header__text-call-secondary">заказать звонок</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="header__bottom">
+							<ul class="list-reset header__list">
+								<li class="header__item">
+									<a href="categories.html" class="header__link">Подготовка водителей</a>
+								</li>
+								<li class="header__item">
+									<a href="#x" class="header__link header__link-active">Услуги и цены</a>
+								</li>
+								<li class="header__item">
+									<a href="#" class="header__link">Записаться</a>
+								</li>
+								<li class="header__item">
+									<a href="#" class="header__link header__link-online">Online обучение</a>
+								</li>
+							</ul>
+							<a href="promotions.html" class="header__discount">
+								<img
+									src="images/discount.svg"
+									class="image header__icon-discount"
+									width="19"
+									height="21"
+									alt="Иконка скидки"
+								/>
+								Акции и скидки
+							</a>
+						</div>
+					</div>
+				</div>
+			</header>
+            <main>
+                <div class="inner-content">
+                    <div class="inner-content__bg">
+                        <img src="images/inner-content-bg-1.jpg" alt="">
+                    </div>
+                    <div class="inner-content__content">
+                        <div class="nav-chain">
+                            <a href="index.html">ДОСААФ России /</a>
+                            <a href="#">Услуги и цены /</a>
+                            <p>Водитель категории «B*»</p>
+                        </div>
+                        <h1 class="title types__title">Обучение водителей <span class="types__title-grey">Категории</span></h1>
+                    </div>
+                    <section class="types">
+                        <div class="container types__container">
+                            <div class="swiper types__slider">
+                                <div class="swiper-wrapper types__wrapper">
+                                    <div class="swiper-slide types__slide">
+                                        <div class="types__column">
+                                            <p class="types__paragraph">
+                                                Категория «BE» - автомобили категории «В», сцепленные с прицепом,
+                                                разрешенная максимальная масса которого превышает 750 килограммов и
+                                                превышает массу автомобиля без нагрузки; автомобили категории «В»,
+                                                сцепленные с прицепом, разрешенная максимальная масса которого превышает 750
+                                                килограммов, при условии, что общая разрешенная максимальная масса такого
+                                                состава транспортных средств превышает 3500 килограммов
+                                            </p>
+                                            <div class="types__billing">
+                                                <h4 class="title types__period">3 месяца</h4>
+                                                <h3 class="title types__price">40 000 руб.</h3>
+                                            </div>
+                                            <a
+                                                href="#"
+                                                class="btn-reset btn btn-primary btn-primary-shadowless types__button"
+                                            >
+                                                записаться
+                                            </a>
+                                        </div>
+                                        <div class="types__container-image">
+                                            <img
+                                                src="images/types-image-1.png"
+                                                class="image types__image types__image-1"
+                                                width="810"
+                                                height="518"
+                                                alt="Изображение категории"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide types__slide">
+                                        <div class="types__column">
+                                            <p class="types__paragraph">
+                                                Категория «BE» - автомобили категории «В», сцепленные с прицепом,
+                                                разрешенная максимальная масса которого превышает 750 килограммов и
+                                                превышает массу автомобиля без нагрузки; автомобили категории «В»,
+                                                сцепленные с прицепом, разрешенная максимальная масса которого превышает 750
+                                                килограммов, при условии, что общая разрешенная максимальная масса такого
+                                                состава транспортных средств превышает 3500 килограммов
+                                            </p>
+                                            <div class="types__billing">
+                                                <h4 class="title types__period">3 месяца</h4>
+                                                <h3 class="title types__price">40 000 руб.</h3>
+                                            </div>
+                                            <a
+                                                href="#"
+                                                class="btn-reset btn btn-primary btn-primary-shadowless types__button"
+                                            >
+                                                записаться
+                                            </a>
+                                        </div>
+                                        <div class="types__container-image">
+                                            <img
+                                                src="images/types-image-2.png"
+                                                class="image types__image types__image-2"
+                                                width="810"
+                                                height="518"
+                                                alt="Изображение категории"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide types__slide">
+                                        <div class="types__column">
+                                            <p class="types__paragraph">
+                                                Категория «BE» - автомобили категории «В», сцепленные с прицепом,
+                                                разрешенная максимальная масса которого превышает 750 килограммов и
+                                                превышает массу автомобиля без нагрузки; автомобили категории «В»,
+                                                сцепленные с прицепом, разрешенная максимальная масса которого превышает 750
+                                                килограммов, при условии, что общая разрешенная максимальная масса такого
+                                                состава транспортных средств превышает 3500 килограммов
+                                            </p>
+                                            <div class="types__billing">
+                                                <h4 class="title types__period">3 месяца</h4>
+                                                <h3 class="title types__price">40 000 руб.</h3>
+                                            </div>
+                                            <a
+                                                href="#"
+                                                class="btn-reset btn btn-primary btn-primary-shadowless types__button"
+                                            >
+                                                записаться
+                                            </a>
+                                        </div>
+                                        <div class="types__container-image">
+                                            <img
+                                                src="images/types-image-3.png"
+                                                class="image types__image types__image-3"
+                                                width="810"
+                                                height="518"
+                                                alt="Изображение категории"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide types__slide">
+                                        <div class="types__column">
+                                            <p class="types__paragraph">
+                                                Категория «BE» - автомобили категории «В», сцепленные с прицепом,
+                                                разрешенная максимальная масса которого превышает 750 килограммов и
+                                                превышает массу автомобиля без нагрузки; автомобили категории «В»,
+                                                сцепленные с прицепом, разрешенная максимальная масса которого превышает 750
+                                                килограммов, при условии, что общая разрешенная максимальная масса такого
+                                                состава транспортных средств превышает 3500 килограммов
+                                            </p>
+                                            <div class="types__billing">
+                                                <h4 class="title types__period">3 месяца</h4>
+                                                <h3 class="title types__price">40 000 руб.</h3>
+                                            </div>
+                                            <a
+                                                href="#"
+                                                class="btn-reset btn btn-primary btn-primary-shadowless types__button"
+                                            >
+                                                записаться
+                                            </a>
+                                        </div>
+                                        <div class="types__container-image">
+                                            <img
+                                                src="images/types-image-4.png"
+                                                class="image types__image types__image-4"
+                                                width="810"
+                                                height="518"
+                                                alt="Изображение категории"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide types__slide">
+                                        <div class="types__column">
+                                            <p class="types__paragraph">
+                                                Категория «BE» - автомобили категории «В», сцепленные с прицепом,
+                                                разрешенная максимальная масса которого превышает 750 килограммов и
+                                                превышает массу автомобиля без нагрузки; автомобили категории «В»,
+                                                сцепленные с прицепом, разрешенная максимальная масса которого превышает 750
+                                                килограммов, при условии, что общая разрешенная максимальная масса такого
+                                                состава транспортных средств превышает 3500 килограммов
+                                            </p>
+                                            <div class="types__billing">
+                                                <h4 class="title types__period">3 месяца</h4>
+                                                <h3 class="title types__price">40 000 руб.</h3>
+                                            </div>
+                                            <a
+                                                href="#"
+                                                class="btn-reset btn btn-primary btn-primary-shadowless types__button"
+                                            >
+                                                записаться
+                                            </a>
+                                        </div>
+                                        <div class="types__container-image">
+                                            <img
+                                                src="images/types-image-5.png"
+                                                class="image types__image types__image-5"
+                                                width="810"
+                                                height="518"
+                                                alt="Изображение категории"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide types__slide">
+                                        <div class="types__column">
+                                            <p class="types__paragraph">
+                                                Категория «BE» - автомобили категории «В», сцепленные с прицепом,
+                                                разрешенная максимальная масса которого превышает 750 килограммов и
+                                                превышает массу автомобиля без нагрузки; автомобили категории «В»,
+                                                сцепленные с прицепом, разрешенная максимальная масса которого превышает 750
+                                                килограммов, при условии, что общая разрешенная максимальная масса такого
+                                                состава транспортных средств превышает 3500 килограммов
+                                            </p>
+                                            <div class="types__billing">
+                                                <h4 class="title types__period">3 месяца</h4>
+                                                <h3 class="title types__price">40 000 руб.</h3>
+                                            </div>
+                                            <a
+                                                href="#"
+                                                class="btn-reset btn btn-primary btn-primary-shadowless types__button"
+                                            >
+                                                записаться
+                                            </a>
+                                        </div>
+                                        <div class="types__container-image">
+                                            <img
+                                                src="images/types-image-6.png"
+                                                class="image types__image types__image-6"
+                                                width="810"
+                                                height="518"
+                                                alt="Изображение категории"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide types__slide">
+                                        <div class="types__column">
+                                            <p class="types__paragraph">
+                                                Категория «BE» - автомобили категории «В», сцепленные с прицепом,
+                                                разрешенная максимальная масса которого превышает 750 килограммов и
+                                                превышает массу автомобиля без нагрузки; автомобили категории «В»,
+                                                сцепленные с прицепом, разрешенная максимальная масса которого превышает 750
+                                                килограммов, при условии, что общая разрешенная максимальная масса такого
+                                                состава транспортных средств превышает 3500 килограммов
+                                            </p>
+                                            <div class="types__billing">
+                                                <h4 class="title types__period">3 месяца</h4>
+                                                <h3 class="title types__price">40 000 руб.</h3>
+                                            </div>
+                                            <a
+                                                href="#"
+                                                class="btn-reset btn btn-primary btn-primary-shadowless types__button"
+                                            >
+                                                записаться
+                                            </a>
+                                        </div>
+                                        <div class="types__container-image">
+                                            <img
+                                                src="images/types-image-7.png"
+                                                class="image types__image types__image-7"
+                                                width="810"
+                                                height="518"
+                                                alt="Изображение категории"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide types__slide">
+                                        <div class="types__column">
+                                            <p class="types__paragraph">
+                                                Категория «BE» - автомобили категории «В», сцепленные с прицепом,
+                                                разрешенная максимальная масса которого превышает 750 килограммов и
+                                                превышает массу автомобиля без нагрузки; автомобили категории «В»,
+                                                сцепленные с прицепом, разрешенная максимальная масса которого превышает 750
+                                                килограммов, при условии, что общая разрешенная максимальная масса такого
+                                                состава транспортных средств превышает 3500 килограммов
+                                            </p>
+                                            <div class="types__billing">
+                                                <h4 class="title types__period">3 месяца</h4>
+                                                <h3 class="title types__price">40 000 руб.</h3>
+                                            </div>
+                                            <a
+                                                href="#"
+                                                class="btn-reset btn btn-primary btn-primary-shadowless types__button"
+                                            >
+                                                записаться
+                                            </a>
+                                        </div>
+                                        <div class="types__container-image">
+                                            <img
+                                                src="images/types-image-8.png"
+                                                class="image types__image types__image-8"
+                                                width="810"
+                                                height="518"
+                                                alt="Изображение категории"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide types__slide">
+                                        <div class="types__column">
+                                            <p class="types__paragraph">
+                                                Категория «BE» - автомобили категории «В», сцепленные с прицепом,
+                                                разрешенная максимальная масса которого превышает 750 килограммов и
+                                                превышает массу автомобиля без нагрузки; автомобили категории «В»,
+                                                сцепленные с прицепом, разрешенная максимальная масса которого превышает 750
+                                                килограммов, при условии, что общая разрешенная максимальная масса такого
+                                                состава транспортных средств превышает 3500 килограммов
+                                            </p>
+                                            <div class="types__billing">
+                                                <h4 class="title types__period">3 месяца</h4>
+                                                <h3 class="title types__price">40 000 руб.</h3>
+                                            </div>
+                                            <a
+                                                href="#"
+                                                class="btn-reset btn btn-primary btn-primary-shadowless types__button"
+                                            >
+                                                записаться
+                                            </a>
+                                        </div>
+                                        <div class="types__container-image">
+                                            <img
+                                                src="images/types-image-9.png"
+                                                class="image types__image types__image-9"
+                                                width="810"
+                                                height="518"
+                                                alt="Изображение категории"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide types__slide">
+                                        <div class="types__column">
+                                            <p class="types__paragraph">
+                                                Категория «BE» - автомобили категории «В», сцепленные с прицепом,
+                                                разрешенная максимальная масса которого превышает 750 килограммов и
+                                                превышает массу автомобиля без нагрузки; автомобили категории «В»,
+                                                сцепленные с прицепом, разрешенная максимальная масса которого превышает 750
+                                                килограммов, при условии, что общая разрешенная максимальная масса такого
+                                                состава транспортных средств превышает 3500 килограммов
+                                            </p>
+                                            <div class="types__billing">
+                                                <h4 class="title types__period">3 месяца</h4>
+                                                <h3 class="title types__price">40 000 руб.</h3>
+                                            </div>
+                                            <a
+                                                href="#"
+                                                class="btn-reset btn btn-primary btn-primary-shadowless types__button"
+                                            >
+                                                записаться
+                                            </a>
+                                        </div>
+                                        <div class="types__column-last">
+                                            <h3 class="title types__title-slide">АI, AII, B, C, D Гостехнадзор</h3>
+                                            <div class="types__container-image">
+                                                <img
+                                                    src="images/types-image-10.png"
+                                                    class="image types__image types__image-10"
+                                                    width="810"
+                                                    height="518"
+                                                    alt="Изображение категории"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="types__container-pagination">
+                                    <h4 class="title types__title-pagination">Категории</h4>
+                                    <div class="types__pagination"></div>
+                                </div>
+                            </div>
+                            <div class="swiper types__categories__slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="types__categories__content">
+                                            <h4>Категория <span>M*</span></h4>
+                                            <p>Категория «M»— автомобили категории «B» сцепленные с прицепом, разрешённая максимальная масса которого превышает 750 килограммов и превышает массу автомобиля без нагрузки; автомобили категории «B», сцепленные с прицепом, разрешённая максимальная масса которого превышает 750 килограммов, при условии, что общая разрешённая максимальная масса такого состава транспортных средств превышает 3500 килограммов. Кто может сдать на категорию BE</p>
+                                            <h4>На обучение и сдачу на права принимаются лица:</h3>
+                                            <ol>
+												<li>имеющие водительское удостоверение категории «В»;</li>
+												<li>имеющие стаж управления ТС категории «В» не менее одного года;</li>
+												<li>прошедшие медосвидетельствование и имеющие медсправку установленного образца.</li>
+											</ol>
+                                            <h4>Подготовка водителей на категорию «M» включает в себя:</h4>
+                                            <ol>
+												<li>Теория - 16 часов;</li>
+												<li>Практика вождения - 16 часов (ГАЗ 330210 с прицепом 83102 «Тонар»).</li>
+												<li>Общее время обучения: 3 месяца</li>
+											</ol>
+                                            <h3>Категория «M» <span>40 000 руб</span></h3>
+                                            <span>Категория «M» - автомобили категории «В», сцепленные с прицепом, разрешенная максимальная масса которого превышает 750 килограммов и превышает массу автомобиля без нагрузки; автомобили категории «В», сцепленные с прицепом, разрешенная максимальная масса которого превышает 750 килограммов, при условии, что общая разрешенная максимальная масса такого состава транспортных средств превышает 3500 килограммов;</span>
+                                        </div>
+                                        <div class="types__categories__licence">
+                                            <a href="images/licence.jpg" data-fancybox="licence1"><img src="images/licence.jpg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="types__categories__content">
+                                            <h4>Категория <span>A1*</span></h4>
+                                            <p>Категория «A1»— автомобили категории «B» сцепленные с прицепом, разрешённая максимальная масса которого превышает 750 килограммов и превышает массу автомобиля без нагрузки; автомобили категории «B», сцепленные с прицепом, разрешённая максимальная масса которого превышает 750 килограммов, при условии, что общая разрешённая максимальная масса такого состава транспортных средств превышает 3500 килограммов. Кто может сдать на категорию BE</p>
+                                            <h4>На обучение и сдачу на права принимаются лица:</h3>
+                                            <ol>
+												<li>имеющие водительское удостоверение категории «В»;</li>
+												<li>имеющие стаж управления ТС категории «В» не менее одного года;</li>
+												<li>прошедшие медосвидетельствование и имеющие медсправку установленного образца.</li>
+											</ol>
+                                            <h4>Подготовка водителей на категорию «A1» включает в себя:</h4>
+                                            <ol>
+												<li>Теория - 16 часов;</li>
+												<li>Практика вождения - 16 часов (ГАЗ 330210 с прицепом 83102 «Тонар»).</li>
+												<li>Общее время обучения: 3 месяца</li>
+											</ol>
+                                            <h3>Категория «A1» <span>40 000 руб</span></h3>
+                                            <span>Категория «A1» - автомобили категории «В», сцепленные с прицепом, разрешенная максимальная масса которого превышает 750 килограммов и превышает массу автомобиля без нагрузки; автомобили категории «В», сцепленные с прицепом, разрешенная максимальная масса которого превышает 750 килограммов, при условии, что общая разрешенная максимальная масса такого состава транспортных средств превышает 3500 килограммов;</span>
+                                        </div>
+										<div class="types__categories__licence">
+                                            <a href="images/licence.jpg" data-fancybox="licence2"><img src="images/licence.jpg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="types__categories__content">
+                                            <h4>Категория <span>A*</span></h4>
+                                            <p>Категория «A»— автомобили категории «B» сцепленные с прицепом, разрешённая максимальная масса которого превышает 750 килограммов и превышает массу автомобиля без нагрузки; автомобили категории «B», сцепленные с прицепом, разрешённая максимальная масса которого превышает 750 килограммов, при условии, что общая разрешённая максимальная масса такого состава транспортных средств превышает 3500 килограммов. Кто может сдать на категорию BE</p>
+                                            <h4>На обучение и сдачу на права принимаются лица:</h3>
+                                            <ol>
+												<li>имеющие водительское удостоверение категории «В»;</li>
+												<li>имеющие стаж управления ТС категории «В» не менее одного года;</li>
+												<li>прошедшие медосвидетельствование и имеющие медсправку установленного образца.</li>
+											</ol>
+                                            <h4>Подготовка водителей на категорию «A» включает в себя:</h4>
+                                            <ol>
+												<li>Теория - 16 часов;</li>
+												<li>Практика вождения - 16 часов (ГАЗ 330210 с прицепом 83102 «Тонар»).</li>
+												<li>Общее время обучения: 3 месяца</li>
+											</ol>
+                                            <h3>Категория «A» <span>40 000 руб</span></h3>
+                                            <span>Категория «A» - автомобили категории «В», сцепленные с прицепом, разрешенная максимальная масса которого превышает 750 килограммов и превышает массу автомобиля без нагрузки; автомобили категории «В», сцепленные с прицепом, разрешенная максимальная масса которого превышает 750 килограммов, при условии, что общая разрешенная максимальная масса такого состава транспортных средств превышает 3500 килограммов;</span>
+                                        </div>
+										<div class="types__categories__licence">
+                                            <a href="images/licence.jpg" data-fancybox="licence3"><img src="images/licence.jpg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="types__categories__content">
+                                            <h4>Категория <span>B*</span></h4>
+                                            <p>Категория «B»— автомобили категории «B» сцепленные с прицепом, разрешённая максимальная масса которого превышает 750 килограммов и превышает массу автомобиля без нагрузки; автомобили категории «B», сцепленные с прицепом, разрешённая максимальная масса которого превышает 750 килограммов, при условии, что общая разрешённая максимальная масса такого состава транспортных средств превышает 3500 килограммов. Кто может сдать на категорию BE</p>
+                                            <h4>На обучение и сдачу на права принимаются лица:</h3>
+                                            <ol>
+												<li>имеющие водительское удостоверение категории «В»;</li>
+												<li>имеющие стаж управления ТС категории «В» не менее одного года;</li>
+												<li>прошедшие медосвидетельствование и имеющие медсправку установленного образца.</li>
+											</ol>
+                                            <h4>Подготовка водителей на категорию «B» включает в себя:</h4>
+                                            <ol>
+												<li>Теория - 16 часов;</li>
+												<li>Практика вождения - 16 часов (ГАЗ 330210 с прицепом 83102 «Тонар»).</li>
+												<li>Общее время обучения: 3 месяца</li>
+											</ol>
+                                            <h3>Категория «B» <span>40 000 руб</span></h3>
+                                            <span>Категория «B» - автомобили категории «В», сцепленные с прицепом, разрешенная максимальная масса которого превышает 750 килограммов и превышает массу автомобиля без нагрузки; автомобили категории «В», сцепленные с прицепом, разрешенная максимальная масса которого превышает 750 килограммов, при условии, что общая разрешенная максимальная масса такого состава транспортных средств превышает 3500 килограммов;</span>
+                                        </div>
+										<div class="types__categories__licence">
+                                            <a href="images/licence.jpg" data-fancybox="licence4"><img src="images/licence.jpg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="types__categories__content">
+                                            <h4>Категория <span>C*</span></h4>
+                                            <p>Категория «C»— автомобили категории «B» сцепленные с прицепом, разрешённая максимальная масса которого превышает 750 килограммов и превышает массу автомобиля без нагрузки; автомобили категории «B», сцепленные с прицепом, разрешённая максимальная масса которого превышает 750 килограммов, при условии, что общая разрешённая максимальная масса такого состава транспортных средств превышает 3500 килограммов. Кто может сдать на категорию BE</p>
+                                            <h4>На обучение и сдачу на права принимаются лица:</h3>
+                                            <ol>
+												<li>имеющие водительское удостоверение категории «В»;</li>
+												<li>имеющие стаж управления ТС категории «В» не менее одного года;</li>
+												<li>прошедшие медосвидетельствование и имеющие медсправку установленного образца.</li>
+											</ol>
+                                            <h4>Подготовка водителей на категорию «C» включает в себя:</h4>
+                                            <ol>
+												<li>Теория - 16 часов;</li>
+												<li>Практика вождения - 16 часов (ГАЗ 330210 с прицепом 83102 «Тонар»).</li>
+												<li>Общее время обучения: 3 месяца</li>
+											</ol>
+                                            <h3>Категория «C» <span>40 000 руб</span></h3>
+                                            <span>Категория «C» - автомобили категории «В», сцепленные с прицепом, разрешенная максимальная масса которого превышает 750 килограммов и превышает массу автомобиля без нагрузки; автомобили категории «В», сцепленные с прицепом, разрешенная максимальная масса которого превышает 750 килограммов, при условии, что общая разрешенная максимальная масса такого состава транспортных средств превышает 3500 килограммов;</span>
+                                        </div>
+										<div class="types__categories__licence">
+                                            <a href="images/licence.jpg" data-fancybox="licence5"><img src="images/licence.jpg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="types__categories__content">
+                                            <h4>Категория <span>D*</span></h4>
+                                            <p>Категория «D»— автомобили категории «B» сцепленные с прицепом, разрешённая максимальная масса которого превышает 750 килограммов и превышает массу автомобиля без нагрузки; автомобили категории «B», сцепленные с прицепом, разрешённая максимальная масса которого превышает 750 килограммов, при условии, что общая разрешённая максимальная масса такого состава транспортных средств превышает 3500 килограммов. Кто может сдать на категорию BE</p>
+                                            <h4>На обучение и сдачу на права принимаются лица:</h3>
+                                            <ol>
+												<li>имеющие водительское удостоверение категории «В»;</li>
+												<li>имеющие стаж управления ТС категории «В» не менее одного года;</li>
+												<li>прошедшие медосвидетельствование и имеющие медсправку установленного образца.</li>
+											</ol>
+                                            <h4>Подготовка водителей на категорию «D» включает в себя:</h4>
+                                            <ol>
+												<li>Теория - 16 часов;</li>
+												<li>Практика вождения - 16 часов (ГАЗ 330210 с прицепом 83102 «Тонар»).</li>
+												<li>Общее время обучения: 3 месяца</li>
+											</ol>
+                                            <h3>Категория «D» <span>40 000 руб</span></h3>
+                                            <span>Категория «D» - автомобили категории «В», сцепленные с прицепом, разрешенная максимальная масса которого превышает 750 килограммов и превышает массу автомобиля без нагрузки; автомобили категории «В», сцепленные с прицепом, разрешенная максимальная масса которого превышает 750 килограммов, при условии, что общая разрешенная максимальная масса такого состава транспортных средств превышает 3500 килограммов;</span>
+                                        </div>
+										<div class="types__categories__licence">
+                                            <a href="images/licence.jpg" data-fancybox="licence6"><img src="images/licence.jpg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="types__categories__content">
+                                            <h4>Категория <span>BE*</span></h4>
+                                            <p>Категория «BE»— автомобили категории «B» сцепленные с прицепом, разрешённая максимальная масса которого превышает 750 килограммов и превышает массу автомобиля без нагрузки; автомобили категории «B», сцепленные с прицепом, разрешённая максимальная масса которого превышает 750 килограммов, при условии, что общая разрешённая максимальная масса такого состава транспортных средств превышает 3500 килограммов. Кто может сдать на категорию BE</p>
+                                            <h4>На обучение и сдачу на права принимаются лица:</h3>
+                                            <ol>
+												<li>имеющие водительское удостоверение категории «В»;</li>
+												<li>имеющие стаж управления ТС категории «В» не менее одного года;</li>
+												<li>прошедшие медосвидетельствование и имеющие медсправку установленного образца.</li>
+											</ol>
+                                            <h4>Подготовка водителей на категорию «ВЕ» включает в себя:</h4>
+                                            <ol>
+												<li>Теория - 16 часов;</li>
+												<li>Практика вождения - 16 часов (ГАЗ 330210 с прицепом 83102 «Тонар»).</li>
+												<li>Общее время обучения: 3 месяца</li>
+											</ol>
+                                            <h3>Категория «ВЕ» <span>40 000 руб</span></h3>
+                                            <span>Категория «BE» - автомобили категории «В», сцепленные с прицепом, разрешенная максимальная масса которого превышает 750 килограммов и превышает массу автомобиля без нагрузки; автомобили категории «В», сцепленные с прицепом, разрешенная максимальная масса которого превышает 750 килограммов, при условии, что общая разрешенная максимальная масса такого состава транспортных средств превышает 3500 килограммов;</span>
+                                        </div>
+										<div class="types__categories__licence">
+                                            <a href="images/licence.jpg" data-fancybox="licence7"><img src="images/licence.jpg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="types__categories__content">
+                                            <h4>Категория <span>CE*</span></h4>
+                                            <p>Категория «CE»— автомобили категории «B» сцепленные с прицепом, разрешённая максимальная масса которого превышает 750 килограммов и превышает массу автомобиля без нагрузки; автомобили категории «B», сцепленные с прицепом, разрешённая максимальная масса которого превышает 750 килограммов, при условии, что общая разрешённая максимальная масса такого состава транспортных средств превышает 3500 килограммов. Кто может сдать на категорию BE</p>
+                                            <h4>На обучение и сдачу на права принимаются лица:</h3>
+                                            <ol>
+												<li>имеющие водительское удостоверение категории «В»;</li>
+												<li>имеющие стаж управления ТС категории «В» не менее одного года;</li>
+												<li>прошедшие медосвидетельствование и имеющие медсправку установленного образца.</li>
+											</ol>
+                                            <h4>Подготовка водителей на категорию «CE» включает в себя:</h4>
+                                            <ol>
+												<li>Теория - 16 часов;</li>
+												<li>Практика вождения - 16 часов (ГАЗ 330210 с прицепом 83102 «Тонар»).</li>
+												<li>Общее время обучения: 3 месяца</li>
+											</ol>
+                                            <h3>Категория «CE» <span>40 000 руб</span></h3>
+                                            <span>Категория «CE» - автомобили категории «В», сцепленные с прицепом, разрешенная максимальная масса которого превышает 750 килограммов и превышает массу автомобиля без нагрузки; автомобили категории «В», сцепленные с прицепом, разрешенная максимальная масса которого превышает 750 килограммов, при условии, что общая разрешенная максимальная масса такого состава транспортных средств превышает 3500 килограммов;</span>
+                                        </div>
+										<div class="types__categories__licence">
+                                            <a href="images/licence.jpg" data-fancybox="licence8"><img src="images/licence.jpg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="types__categories__content">
+                                            <h4>Категория <span>DE*</span></h4>
+                                            <p>Категория «DE»— автомобили категории «B» сцепленные с прицепом, разрешённая максимальная масса которого превышает 750 килограммов и превышает массу автомобиля без нагрузки; автомобили категории «B», сцепленные с прицепом, разрешённая максимальная масса которого превышает 750 килограммов, при условии, что общая разрешённая максимальная масса такого состава транспортных средств превышает 3500 килограммов. Кто может сдать на категорию BE</p>
+                                            <h4>На обучение и сдачу на права принимаются лица:</h3>
+                                            <ol>
+												<li>имеющие водительское удостоверение категории «В»;</li>
+												<li>имеющие стаж управления ТС категории «В» не менее одного года;</li>
+												<li>прошедшие медосвидетельствование и имеющие медсправку установленного образца.</li>
+											</ol>
+                                            <h4>Подготовка водителей на категорию «DE» включает в себя:</h4>
+                                            <ol>
+												<li>Теория - 16 часов;</li>
+												<li>Практика вождения - 16 часов (ГАЗ 330210 с прицепом 83102 «Тонар»).</li>
+												<li>Общее время обучения: 3 месяца</li>
+											</ol>
+                                            <h3>Категория «DE» <span>40 000 руб</span></h3>
+                                            <span>Категория «DE» - автомобили категории «В», сцепленные с прицепом, разрешенная максимальная масса которого превышает 750 килограммов и превышает массу автомобиля без нагрузки; автомобили категории «В», сцепленные с прицепом, разрешенная максимальная масса которого превышает 750 килограммов, при условии, что общая разрешенная максимальная масса такого состава транспортных средств превышает 3500 килограммов;</span>
+                                        </div>
+										<div class="types__categories__licence">
+                                            <a href="images/licence.jpg" data-fancybox="licence9"><img src="images/licence.jpg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="types__categories__content">
+                                            <h4>Категория <span>САМОХОДНЫЕ ТС*</span></h4>
+                                            <p>Категория «САМОХОДНЫЕ ТС»— автомобили категории «B» сцепленные с прицепом, разрешённая максимальная масса которого превышает 750 килограммов и превышает массу автомобиля без нагрузки; автомобили категории «B», сцепленные с прицепом, разрешённая максимальная масса которого превышает 750 килограммов, при условии, что общая разрешённая максимальная масса такого состава транспортных средств превышает 3500 килограммов. Кто может сдать на категорию BE</p>
+                                            <h4>На обучение и сдачу на права принимаются лица:</h3>
+                                            <ol>
+												<li>имеющие водительское удостоверение категории «В»;</li>
+												<li>имеющие стаж управления ТС категории «В» не менее одного года;</li>
+												<li>прошедшие медосвидетельствование и имеющие медсправку установленного образца.</li>
+											</ol>
+                                            <h4>Подготовка водителей на категорию «САМОХОДНЫЕ ТС» включает в себя:</h4>
+                                            <ol>
+												<li>Теория - 16 часов;</li>
+												<li>Практика вождения - 16 часов (ГАЗ 330210 с прицепом 83102 «Тонар»).</li>
+												<li>Общее время обучения: 3 месяца</li>
+											</ol>
+                                            <h3>Категория «САМОХОДНЫЕ ТС» <span>40 000 руб</span></h3>
+                                            <span>Категория «САМОХОДНЫЕ ТС» - автомобили категории «В», сцепленные с прицепом, разрешенная максимальная масса которого превышает 750 килограммов и превышает массу автомобиля без нагрузки; автомобили категории «В», сцепленные с прицепом, разрешенная максимальная масса которого превышает 750 килограммов, при условии, что общая разрешенная максимальная масса такого состава транспортных средств превышает 3500 килограммов;</span>
+                                        </div>
+										<div class="types__categories__licence">
+                                            <a href="images/licence.jpg" data-fancybox="licence10"><img src="images/licence.jpg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+				<section class="why">
+					<div class="container why__container">
+						<h2 class="title why__title">ПОЧЕМУ ИМЕННО <span class="why__title-yellow">ДОСААФ</span></h2>
+						<ul class="list-reset why__list">
+							<li class="why__item">
+								<img
+									src="images/why-image-1.png"
+									class="image why__image why__image-1"
+									width="252"
+									height="156"
+									alt="Дорожные конусы"
+								/>
+								<h4 class="title why__subtitle">Самый большой</h4>
+								<p class="why__paragraph">профессиональный автодром Коломны</p>
+							</li>
+							<li class="why__item">
+								<img
+									src="images/why-image-2.png"
+									class="image why__image why__image-2"
+									width="224"
+									height="225"
+									alt="Дорожные конусы"
+								/>
+								<h4 class="title why__subtitle">Оборудованный</h4>
+								<p class="why__paragraph">учебный класс</p>
+							</li>
+							<li class="why__item">
+								<img
+									src="images/why-image-3.png"
+									class="image why__image why__image-3"
+									width="210"
+									height="210"
+									alt="Дорожные конусы"
+								/>
+								<h4 class="title why__subtitle">Предложим условия</h4>
+								<p class="why__paragraph">лучше чем в любой из&nbsp;автошкол Коломны</p>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="stats">
+					<div class="stats__fade"></div>
+					<div class="container stats__container">
+						<div class="stats__body">
+							<picture class="stats__picture stats__picture-1">
+								<source srcset="images/stats-image-1-480.png" media="(max-width: 480px)" />
+								<img
+									src="images/stats-image-1.png"
+									class="image stats__image stats__image-1"
+									width="461"
+									height="310"
+									alt="Год старта работ"
+								/>
+							</picture>
+							<picture class="stats__picture stats__picture-2">
+								<source srcset="images/stats-image-2-480.png" media="(max-width: 480px)" />
+								<img
+									src="images/stats-image-2.png"
+									class="image stats__image stats__image-2"
+									width="647"
+									height="380"
+									alt="Количество клиентов"
+								/>
+							</picture>
+							<picture class="stats__picture stats__picture-3">
+								<source srcset="images/stats-image-3-480.png" media="(max-width: 480px)" />
+								<img
+									src="images/stats-image-3.png"
+									class="image stats__image stats__image-3"
+									width="461"
+									height="316"
+									alt="Процент сдачи экзаменов"
+								/>
+							</picture>
+						</div>
+					</div>
+				</section>
+				<section class="staff">
+					<div class="container staff__container">
+						<h2 class="title staff__title">
+							Наши инструкторы <span class="staff__title-red">профессионалы</span>
+						</h2>
+						<div class="swiper staff__slider">
+							<button
+								class="btn-reset btn-control btn-control-prev btn-control-shadowless staff__button-control staff__button-control-prev"
+							>
+								<img src="images/svg/right-arrow.svg" alt="" class="btn-control__arrow">
+							</button>
+							<div class="swiper-wrapper staff__wrapper">
+								<div class="swiper-slide staff__slide">
+									<img
+										src="images/staff-image-1.png"
+										class="image staff__image"
+										width="282"
+										height="282"
+										alt="Фото инсутрктора"
+									/>
+									<h4 class="title staff__name">Некрасов Олег Николаевич</h4>
+									<h3 class="title staff__category">Категория b</h3>
+									<div class="staff__container-logo">
+										<img
+											src="images/staff-logo-1.png"
+											class="image staff__logo"
+											width="105"
+											height="56"
+											alt="Логотип машины"
+										/>
+									</div>
+								</div>
+								<div class="swiper-slide staff__slide">
+									<img
+										src="images/staff-image-2.png"
+										class="image staff__image"
+										width="282"
+										height="282"
+										alt="Фото инсутрктора"
+									/>
+									<h4 class="title staff__name">Колмаков Максим Сергеевич</h4>
+									<h3 class="title staff__category">Категория С</h3>
+									<div class="staff__container-logo">
+										<img
+											src="images/staff-logo-2.png"
+											class="image staff__logo"
+											width="140"
+											height="75"
+											alt="Логотип машины"
+										/>
+									</div>
+								</div>
+								<div class="swiper-slide staff__slide">
+									<img
+										src="images/staff-image-3.png"
+										class="image staff__image"
+										width="282"
+										height="282"
+										alt="Фото инсутрктора"
+									/>
+									<h4 class="title staff__name">Дорофеев Алексей Геннадьевич</h4>
+									<h3 class="title staff__category">Категория b</h3>
+									<div class="staff__container-logo">
+										<img
+											src="images/staff-logo-3.png"
+											class="image staff__logo"
+											width="140"
+											height="75"
+											alt="Логотип машины"
+										/>
+									</div>
+								</div>
+								<div class="swiper-slide staff__slide">
+									<img
+										src="images/staff-image-1.png"
+										class="image staff__image"
+										width="282"
+										height="282"
+										alt="Фото инсутрктора"
+									/>
+									<h4 class="title staff__name">Некрасов Олег Николаевич</h4>
+									<h3 class="title staff__category">Категория b</h3>
+									<div class="staff__container-logo">
+										<img
+											src="images/staff-logo-1.png"
+											class="image staff__logo"
+											width="105"
+											height="56"
+											alt="Логотип машины"
+										/>
+									</div>
+								</div>
+								<div class="swiper-slide staff__slide">
+									<img
+										src="images/staff-image-2.png"
+										class="image staff__image"
+										width="282"
+										height="282"
+										alt="Фото инсутрктора"
+									/>
+									<h4 class="title staff__name">Колмаков Максим Сергеевич</h4>
+									<h3 class="title staff__category">Категория С</h3>
+									<div class="staff__container-logo">
+										<img
+											src="images/staff-logo-2.png"
+											class="image staff__logo"
+											width="140"
+											height="75"
+											alt="Логотип машины"
+										/>
+									</div>
+								</div>
+								<div class="swiper-slide staff__slide">
+									<img
+										src="images/staff-image-3.png"
+										class="image staff__image"
+										width="282"
+										height="282"
+										alt="Фото инсутрктора"
+									/>
+									<h4 class="title staff__name">Дорофеев Алексей Геннадьевич</h4>
+									<h3 class="title staff__category">Категория b</h3>
+									<div class="staff__container-logo">
+										<img
+											src="images/staff-logo-3.png"
+											class="image staff__logo"
+											width="140"
+											height="75"
+											alt="Логотип машины"
+										/>
+									</div>
+								</div>
+							</div>
+							<button
+								class="btn-reset btn-control btn-control-next btn-control-shadowless staff__button-control staff__button-control-next"
+							>
+								<img src="images/svg/right-arrow.svg" alt="" class="btn-control__arrow">
+							</button>
+						</div>
+						<a href="#" target="_blank" class="staff__link">
+							все инструкторы
+							<img src="images/svg/refresh.svg" alt="" class="staff__icon">
+						</a>
+					</div>
+				</section>
+				<section class="comms">
+					<div class="container comms__container">
+						<h2 class="title comms__title">Отзывы</h2>
+						<div class="swiper comms__slider">
+							<button
+								class="btn-reset btn-control btn-control-prev btn-control-shadowless comms__button-control comms__button-control-prev"
+							>
+								<img src="images/svg/right-arrow.svg" alt="" class="btn-control__arrow">
+							</button>
+							<div class="swiper-wrapper comms__wrapper">
+								<div class="swiper-slide comms__slide">
+									<div class="comms__container-image">
+										<img
+											src="images/comms-image-1.png"
+											class="image comms__image"
+											width="120"
+											height="120"
+											alt="Аватар клиента"
+										/>
+									</div>
+									<div class="comms__body">
+										<h4 class="title comms__date">24.04.2023</h4>
+										<h3 class="title comms__name">Анастасия Куманева</h3>
+										<p class="title comms__paragraph">
+											Прошла обучение в ДОСААФ, всем довольна. Теория разбирается очень доступно и
+											на жизненных примерах Далекоооооооооооо, за словесными.
+										</p>
+										<a
+											href="#"
+											class="btn-control btn-control-next btn-control-shadowless comms__link"
+										>
+											<img src="images/svg/right-arrow.svg" alt="" class="btn-control__arrow">
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide comms__slide">
+									<div class="comms__container-image">
+										<img
+											src="images/comms-image-2.png"
+											class="image comms__image"
+											width="120"
+											height="120"
+											alt="Аватар клиента"
+										/>
+									</div>
+									<div class="comms__body">
+										<h4 class="title comms__date">24.04.2023</h4>
+										<h3 class="title comms__name">Регинка Анфиногенова</h3>
+										<p class="title comms__paragraph">
+											Прошла обучение в ДОСААФ, всем довольна. Теория разбирается очень доступно и
+											на жизненных примерах Далекоооооооооо, за словесными.
+										</p>
+										<a
+											href="#"
+											class="btn-control btn-control-next btn-control-shadowless comms__link"
+										>
+											<img src="images/svg/right-arrow.svg" alt="" class="btn-control__arrow">
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide comms__slide">
+									<div class="comms__container-image">
+										<img
+											src="images/comms-image-3.png"
+											class="image comms__image"
+											width="120"
+											height="120"
+											alt="Аватар клиента"
+										/>
+									</div>
+									<div class="comms__body">
+										<h4 class="title comms__date">24.04.2023</h4>
+										<h3 class="title comms__name">Арина Цыплакова</h3>
+										<p class="title comms__paragraph">
+											Прошла обучение в ДОСААФ, всем довольна. Теория разбирается очень доступно и
+											на жизненных примерах Далекоооооооооооо, за словесными.
+										</p>
+										<a
+											href="#"
+											class="btn-control btn-control-next btn-control-shadowless comms__link"
+										>
+											<img src="images/svg/right-arrow.svg" alt="" class="btn-control__arrow">
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide comms__slide">
+									<div class="comms__container-image">
+										<img
+											src="images/comms-image-3.png"
+											class="image comms__image"
+											width="120"
+											height="120"
+											alt="Аватар клиента"
+										/>
+									</div>
+									<div class="comms__body">
+										<h4 class="title comms__date">24.04.2023</h4>
+										<h3 class="title comms__name">Арина Цыплакова</h3>
+										<p class="title comms__paragraph">
+											Прошла обучение в ДОСААФ, всем довольна. Теория разбирается очень доступно и
+											на жизненных примерах Далекооооооооо, за словесными.
+										</p>
+										<a
+											href="#"
+											class="btn-control btn-control-next btn-control-shadowless comms__link"
+										>
+											<img src="images/svg/right-arrow.svg" alt="" class="btn-control__arrow">
+										</a>
+									</div>
+								</div>
+							</div>
+							<button
+								class="btn-reset btn-control btn-control-next btn-control-shadowless comms__button-control comms__button-control-next"
+							>
+								<img src="images/svg/right-arrow.svg" alt="" class="btn-control__arrow">
+							</button>
+						</div>
+						<a href="#" target="_blank" class="comms__link-all">
+							все отзывы
+							<img src="images/svg/refresh.svg" alt="" class="comms__icon">
+						</a>
+					</div>
+				</section>
+				<section class="location">
+					<div class="location__map" id="location-map"></div>
+				</section>
+				<section class="menu">
+					<div class="menu__container">
+						<button class="btn-reset menu__close">
+							<img src="images/close.svg" class="image menu__close" width="44" height="44" alt="#" />
+						</button>
+						<ul class="list-reset header__list menu__list">
+							<li class="header__item menu__item">
+								<a href="categories.html" class="header__link menu__link">Подготовка водителей</a>
+							</li>
+							<li class="header__item menu__item">
+								<a href="#" class="header__link menu__link">Услуги и цены</a>
+							</li>
+							<li class="header__item menu__item">
+								<a href="#" class="header__link menu__link">Записаться</a>
+							</li>
+							<li class="header__item menu__item">
+								<a href="#" class="header__link menu__link header__link-online">Online обучение</a>
+							</li>
+							<li class="header__item menu__item">
+								<a href="promotions.html" class="footer__link-discount menu__link-discount">
+									Акции и скидки
+									<img
+										src="images/discount.svg"
+										class="image footer__icon-discount"
+										width="19"
+										height="21"
+										alt="Иконка скидки"
+									/>
+								</a>
+							</li>
+							<li class="header__item menu__item">
+								<a href="about.html" class="header__link menu__link menu__link-capitalize">Об организации</a>
+							</li>
+							<li class="header__item menu__item">
+								<a href="faq.html" class="header__link menu__link menu__link-capitalize"
+									>Часто задаваемый вопросы</a
+								>
+							</li>
+							<li class="header__item menu__item">
+								<a href="reviews.html" class="header__link menu__link menu__link-capitalize">Отзывы</a>
+							</li>
+							<li class="header__item menu__item">
+								<a href="contacts.html" class="header__link menu__link menu__link-capitalize">Контакты</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__container-phone menu__phone">
+						<a href="tel:" class="btn-reset footer__call">
+							<img
+								src="images/phone.svg"
+								class="image footer__icon-phone"
+								width="20"
+								height="20"
+								alt="Иконка телефона"
+							/>
+							<div class="footer__container-call">
+								<div class="footer__text-call footer__text-call-primary">8 (999) 000-55-10</div>
+								<div class="footer__text-call footer__text-call-secondary">заказать звонок</div>
+							</div>
+						</a>
+						<div class="footer__social">
+							<a href="#" target="_blank" class="footer__link-social">
+								<img src="images/svg/vk.svg" alt="" class="footer__icon footer__icon-vk">
+							</a>
+							<a href="#" target="_blank" class="footer__link-social">
+								<img src="images/svg/tg.svg" alt="" class="footer__icon footer__icon-tg">
+							</a>
+							<a href="#" target="_blank" class="footer__link-social">
+								<img src="images/svg/whatsapp.svg" alt="" class="footer__icon footer__icon-whatsapp">
+							</a>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="footer__container-top">
+					<div class="container footer__container footer__top">
+						<div class="footer__container-logo">
+							<img
+								src="images/logo-footer.png"
+								class="image footer__logo-kolomna"
+								width="190"
+								height="190"
+								alt="Логотип компании"
+							/>
+							<ul class="list-reset footer__list">
+								<li class="footer__item">
+									<a href="categories.html" class="footer__link">Подготовка водителей</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Услуги и цены</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Записаться</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link footer__link-online">Online обучение</a>
+								</li>
+								<li class="footer__item footer__discount">
+									<a href="promotions.html" class="footer__link-discount">
+										<img
+											src="images/discount.svg"
+											class="image footer__icon-discount"
+											width="19"
+											height="21"
+											alt="Иконка скидки"
+										/>
+										Акции и скидки</a
+									>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__container-phone">
+							<a href="tel:" class="btn-reset footer__call">
+								<img
+									src="images/phone.svg"
+									class="image footer__icon-phone"
+									width="20"
+									height="20"
+									alt="Иконка телефона"
+								/>
+								<div class="footer__container-call">
+									<div class="footer__text-call footer__text-call-primary">8 (999) 000-55-10</div>
+									<div class="footer__text-call footer__text-call-secondary">заказать звонок</div>
+								</div>
+							</a>
+							<div class="footer__social">
+								<a href="#" target="_blank" class="footer__link-social">
+									<img src="images/svg/vk.svg" alt="" class="footer__icon footer__icon-vk">
+								</a>
+								<a href="#" target="_blank" class="footer__link-social">
+									<img src="images/svg/tg.svg" alt="" class="footer__icon footer__icon-tg">
+								</a>
+								<a href="#" target="_blank" class="footer__link-social">
+									<img src="images/svg/whatsapp.svg" alt="" class="footer__icon footer__icon-whatsapp">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container footer__container footer__container-body">
+					<p class="footer__paragraph">
+						Профессиональное образовательное учреждение «Коломенская школа Общероссийской
+						общественно-государственной организации «Добровольное общество содействия армии, авиации и флоту
+						России»
+					</p>
+					<p class="footer__paragraph">140405, Московская область, г. Коломна, ул. Астахова, д.2</p>
+					<p class="footer__paragraph">ИНН 5022014895, ОГРН 1035004251677,</p>
+					<p class="footer__paragraph">тел. 8(999)000-55-10</p>
+					<div class="footer__row">
+						<a href="#" class="footer__link-policy">Положение об обработке персональных данных</a>
+						<img
+							src="images/luxar-logo.png"
+							class="image footer__logo-luxar"
+							width="100"
+							height="70"
+							alt="Логотип luxar"
+						/>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

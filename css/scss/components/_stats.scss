@@ -1,0 +1,161 @@
+.stats {
+	position: relative;
+	background: url(../images/stats-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 797px;
+	padding-bottom: 78px;
+	display: flex;
+	align-items: flex-end;
+	margin-top: -260px;
+	&__container {
+		max-width: 1654px;
+		width: 100%;
+	}
+	&__picture {
+		&-2 {
+			margin-right: -125px;
+		}
+	}
+	&__image {
+		&-1 {
+			margin-bottom: 7px;
+		}
+		&-2 {
+			margin-bottom: 97px;
+		}
+	}
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+	&__fade {
+		position: absolute;
+		top: 24%;
+		left: 0;
+		right: 0;
+		height: 18%;
+		background: linear-gradient(transparent, var(--body-bg-color), transparent);
+		z-index: 20;
+	}
+}
+
+@media (max-width: 1400px) {
+	.stats {
+		&__picture {
+			&-1 {
+				width: 32%;
+			}
+			&-2 {
+				width: 44%;
+			}
+			&-3 {
+				width: 33%;
+			}
+		}
+		&__image {
+			height: auto;
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.stats {
+		margin-top: -350px;
+		&__fade {
+			top: 0;
+			transform: translateY(-50%);
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	.stats {
+		margin-top: 0;
+		&__body {
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+
+		&__picture {
+			&-1,
+			&-3 {
+				width: 40%;
+			}
+			&-2 {
+				width: 60%;
+				order: 3;
+				margin-right: -80px;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.stats {
+		padding-top: 130px;
+		min-height: unset;
+		&__picture {
+			&-1,
+			&-3 {
+				width: 50%;
+				order: 1;
+			}
+			&-2 {
+				order: 0;
+				width: 80%;
+			}
+		}
+		&__image {
+			&-2 {
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.stats {
+		align-items: center;
+	}
+}
+
+@media (max-width: 480px) {
+	.stats {
+		padding: 70px 0 10px;
+		margin: 0;
+		background-image: url(../images/stats-bg-480.png);
+		&__picture {
+			&-1 {
+				order: 2;
+				width: 280px;
+			}
+			&-2 {
+				order: 3;
+				width: 368px;
+				max-width: 368px;
+				width: 100%;
+			}
+			&-3 {
+				order: 1;
+				width: 241px;
+				margin-bottom: 30px;
+			}
+		}
+		&__image {
+			&-2 {
+				margin: 0;
+			}
+			&-1 {
+				margin: 0;
+			}
+		}
+		&__body {
+			justify-content: flex-start;
+		}
+	}
+}

@@ -1,0 +1,17 @@
+.burger {
+	@include burger;
+	--burger-width: 36px;
+	--burger-height: 16px;
+	color: var(--yellow-color);
+	min-width: 36px;
+	&::after {
+		width: 30px;
+	}
+	display: none;
+}
+
+@media (max-width: 1024px) {
+	.burger {
+		display: block;
+	}
+}

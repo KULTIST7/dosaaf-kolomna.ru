@@ -1,0 +1,67 @@
+.administration {
+    margin-bottom: 200px;
+
+    @media (max-width: 1024px) {
+        margin-bottom: 105px;
+    }
+
+    .section-box>h1,.section-box>h2 {
+        font-family: var(--main-font-family);
+        font-weight: 700;
+        font-size: 40px;
+        text-transform: uppercase;
+        color: var(--light-red-color);
+        margin-bottom: 84px;
+
+        @media (max-width: 1024px) {
+            margin-bottom: 27px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px 0.66%;
+
+        @media (max-width: 1440px) {
+            gap: 20px 1%;
+        }
+
+        @media (max-width: 1024px) {
+            gap: 20px 2%;
+        }
+
+        .staff__slide {
+            width: 24%;
+            padding: 0 20px 42px;
+            margin-top: 73px;
+
+            @media (max-width: 1440px) {
+                width: 32%;
+            }
+
+            @media (max-width: 1024px) {
+                width: 48%;
+            }
+
+            @media (max-width: 800px) {
+                width: 100%;
+            }
+
+            &>img {
+                max-width: 250px;
+                width: 100%;
+                height: auto;
+                aspect-ratio: 1/1;
+                margin-top: -73px;
+                margin-bottom: 64px;
+            }
+
+            h3 {
+                font-size: 18px;
+                text-align: center;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
