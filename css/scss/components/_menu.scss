@@ -22,9 +22,22 @@
 	}
 	&__link {
 		padding: 0;
+		
+		@media (max-width: 800px) {
+			font-size: 14px;
+		}
+
 		&-discount {
 			gap: 14px;
 			text-transform: uppercase;
+
+			@media (max-width: 800px) {
+				font-size: 14px;
+			}
+
+			@media (max-width: 550px) {
+				flex-direction: row;
+			}
 		}
 		&-capitalize {
 			text-transform: lowercase;
@@ -37,6 +50,10 @@
 		margin-top: 50px;
 		flex-direction: row-reverse;
 		align-items: flex-start;
+
+		@media (max-width: 800px) {
+			margin-top: 78px;
+		}
 	}
 }
 

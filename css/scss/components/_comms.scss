@@ -2,7 +2,6 @@
 	padding: 59px 0 85px;
 	background: #e9eff4;
 	&__container {
-		max-width: 1630px;
 		padding: 0;
 		&-image {
 			position: relative;
@@ -234,6 +233,13 @@
 		}
 		&__slide {
 			max-height: 150px;
+			display: none;
+
+			&:nth-child(1),
+			&:nth-child(2),
+			&:nth-child(3) {
+				display: flex;
+			}
 		}
 		&__button {
 			&-control {

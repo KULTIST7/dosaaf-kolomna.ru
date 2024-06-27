@@ -8,6 +8,8 @@
 				display: none;
 			}
 			&__bottom {
+				background: rgba(0, 0, 0, 0.7);
+				backdrop-filter: blur(7.5px);
 				margin-top: 6px;
 			}
 			&__logo {
@@ -225,6 +227,7 @@
 		}
 		&__top {
 			padding: 0;
+			flex-direction: column;
 			align-items: center;
 			gap: 25px;
 			width: 100%;

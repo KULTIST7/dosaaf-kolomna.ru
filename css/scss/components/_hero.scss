@@ -135,7 +135,7 @@
 				max-width: 578px;
 				clip-path: unset;
 				border-radius: 40px;
-				padding: 20px;
+				padding: 37px 15px 98px;
 				&::after {
 					display: none;
 				}
@@ -197,7 +197,7 @@
 			padding: 0 14px;
 		}
 		&__slide {
-			min-height: 893px;
+			min-height: 733px;
 			padding-bottom: 110px;
 			& h1,
 			h2 {
@@ -208,7 +208,6 @@
 			}
 			& p {
 				text-align: left;
-				font-size: 14px;
 				line-height: 100%;
 			}
 
@@ -246,30 +245,6 @@
 				left: 50%;
 				transform: translateX(-50%);
 			}
-		}
-	}
-}
-
-@media (max-width: 440px) {
-	.hero {
-		&__slide {
-			min-height: 833px;
-		}
-	}
-}
-
-@media (max-width: 400px) {
-	.hero {
-		&__slide {
-			min-height: 793px;
-		}
-	}
-}
-
-@media (max-width: 375px) {
-	.hero {
-		&__slide {
-			min-height: 733px;
 		}
 	}
 }
