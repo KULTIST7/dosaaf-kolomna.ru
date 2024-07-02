@@ -608,7 +608,7 @@ body::-webkit-scrollbar-thumb {
   .header__top {
     padding: 0;
     flex-direction: column;
-    align-items: center;
+    align-items: end;
     gap: 25px;
     width: 100%;
   }
@@ -1632,6 +1632,10 @@ body::-webkit-scrollbar-thumb {
 .staff__button-control {
   top: 40%;
   background: rgba(0, 0, 0, 0.1);
+  transition: all 0.1s linear;
+}
+.staff__button-control:hover {
+  background: rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 1440px) {
