@@ -7,10 +7,10 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<meta name="theme-color" content="#111111" />
 		<title>Kolomna</title>
-		<link rel="stylesheet" href="css/vendor.css" />
+		<link rel="stylesheet" href="css/scss/vendor.css" />
 		<link rel="stylesheet" href="js/swiper/swiper-bundle.min.css">
 		<link rel="stylesheet" href="js/fancybox/fancybox.css">
-		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/scss/main.css" />
 		<script src="js/fancybox/fancybox.umd.js"></script>
 		<script src="js/jquery/jquery-3.6.0.min.js"></script>
 		<script src="https://api-maps.yandex.ru/v3/?apikey=ed8ac0e3-d0f9-44ef-93a7-7882bedb5828&amp;lang=ru_RU"></script>
@@ -99,6 +99,41 @@
 				</div>
 			</header>
             <main>
+                <div class="up">
+                    <a href="#" data-fancybox data-src="#order-a-call" class="up__call">
+                        <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_b_198_393)">
+                                <rect width="48.3533" height="48.3533" rx="15" transform="matrix(-0.707107 0.707107 0.707107 0.707107 34.1909 0)" fill="black" fill-opacity="0.5"/>
+                            </g>
+                            <path d="M43.7573 32.125C43.8952 31.1995 43.8489 30.2558 43.6212 29.3481C43.3105 28.1077 42.6679 26.9754 41.7625 26.0725C40.8597 25.1669 39.7273 24.5241 38.4869 24.2132C37.5792 23.9858 36.6355 23.9398 35.71 24.0777M39.6261 31.688C39.7022 31.1828 39.6585 30.6668 39.4985 30.1816C39.3385 29.6964 39.0668 29.2556 38.7052 28.8947C38.3443 28.5331 37.9035 28.2614 37.4183 28.1014C36.9331 27.9414 36.4171 27.8977 35.9119 27.9737" stroke="#FCB527" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M28.8414 25.6953C29.0356 25.6954 29.2262 25.7475 29.3935 25.8461C29.5608 25.9446 29.6987 26.0862 29.7928 26.256L31.1247 28.6541C31.2107 28.8089 31.2576 28.9823 31.2613 29.1592C31.2651 29.3362 31.2257 29.5115 31.1465 29.6698L29.8636 32.235C29.8636 32.235 30.2353 34.1466 31.7909 35.7021C33.3471 37.2577 35.2521 37.6235 35.2521 37.6235L37.8168 36.3406C37.9752 36.2614 38.1506 36.222 38.3276 36.2259C38.5047 36.2298 38.6782 36.2768 38.833 36.3629L41.2387 37.7002C41.4082 37.7946 41.5494 37.9326 41.6477 38.0999C41.746 38.2671 41.7978 38.4576 41.7977 38.6517V41.4134C41.7977 42.8193 40.4914 43.8355 39.159 43.3854C36.4223 42.4622 32.1747 40.7036 29.4815 38.0116C26.7894 35.319 25.0314 31.0708 24.1077 28.3341C23.6581 27.0016 24.6738 25.6953 26.0802 25.6953H28.8414Z" stroke="#FCB527" stroke-linejoin="round"/>
+                            <defs>
+                                <filter id="filter0_b_198_393" x="-8.78662" y="-8.7868" width="85.9551" height="85.9555" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="7.5"/>
+                                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_198_393"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_198_393" result="shape"/>
+                                </filter>
+                            </defs>
+                        </svg>
+                    </a>
+                    <div class="up__btn">
+                        <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_b_198_390)">
+                                <rect width="48.3533" height="48.3533" rx="15" transform="matrix(-0.707107 0.707107 0.707107 0.707107 34.1909 0)" fill="black" fill-opacity="0.3"/>
+                            </g>
+                            <path d="M34.947 28.4219L41.6082 35.5529C41.7324 35.6859 41.8309 35.8438 41.8982 36.0175C41.9654 36.1912 42 36.3775 42 36.5655C42 36.9453 41.8591 37.3096 41.6082 37.5781C41.484 37.7111 41.3365 37.8166 41.1742 37.8886C41.0119 37.9605 40.838 37.9976 40.6623 37.9976C40.3075 37.9976 39.9673 37.8467 39.7164 37.5781L34.0011 31.4454L28.2858 37.5781C28.162 37.7118 28.0147 37.8179 27.8523 37.8903C27.69 37.9627 27.5158 38 27.34 38C27.1641 38 26.99 37.9627 26.8276 37.8903C26.6653 37.8179 26.5179 37.7118 26.3941 37.5781C26.2692 37.4455 26.1701 37.2878 26.1025 37.114C26.0348 36.9402 26 36.7538 26 36.5655C26 36.3772 26.0348 36.1908 26.1025 36.017C26.1701 35.8432 26.2692 35.6855 26.3941 35.5529L33.0552 28.4219C33.1791 28.2882 33.3264 28.1821 33.4888 28.1097C33.6511 28.0373 33.8253 28 34.0011 28C34.177 28 34.3511 28.0373 34.5135 28.1097C34.6758 28.1821 34.8232 28.2882 34.947 28.4219Z" fill="white"/>
+                            <defs>
+                                <filter id="filter0_b_198_390" x="-3.78662" y="-3.7868" width="75.9551" height="75.9555" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+                                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_198_390"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_198_390" result="shape"/>
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
                 <div class="inner-content">
                     <div class="inner-content__bg">
                         <img src="images/inner-content-bg-1.jpg" alt="">

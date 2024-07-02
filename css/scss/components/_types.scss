@@ -1,6 +1,6 @@
 .types {
 	padding-top: 120px;
-	background-image: url(../images/types-bg.png);
+	background-image: url(../../images/types-bg.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: top center;
@@ -236,7 +236,7 @@
 				padding: 10px 0 0 16px;
 
 				@media (max-width: 800px) {
-					padding-left: 8px;
+					padding: 18px 0 0 8px;
 				}
 
 				&::before {
@@ -334,7 +334,7 @@
 @media (max-width: 768px) {
 	.types {
 		padding-top: 60px;
-		background: url(../images/types-bg-768.png), linear-gradient(var(--white-color), var(--body-bg-color));
+		background: url(../../images/types-bg-768.png), linear-gradient(var(--white-color), var(--body-bg-color));
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: center 20%;

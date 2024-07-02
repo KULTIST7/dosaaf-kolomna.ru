@@ -56,6 +56,8 @@
 		font-size: 16px;
 		line-height: 100%;
 		color: var(--dark-grey-color);
+		position: relative;
+		z-index: 1;
 		margin-bottom: 2px;
 	}
 	&__name {
@@ -63,6 +65,8 @@
 		font-size: 20px;
 		line-height: 80%;
 		color: var(--black-color);
+		position: relative;
+		z-index: 1;
 		margin-bottom: 7px;
 	}
 	&__paragraph {
@@ -71,6 +75,8 @@
 		font-size: 16px;
 		line-height: 112%;
 		color: #626f73;
+		position: relative;
+		z-index: 1;
 		-webkit-line-clamp: 4;
 		-webkit-box-orient: vertical;
 		display: -webkit-box;
@@ -103,7 +109,7 @@
 
 		.reviews__content & {
 			position: relative;
-			display: block;
+			display: block !important;
 			width: 29%;
 			background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 14.97%, rgba(255, 255, 255, 0.90) 100%);
 			box-shadow: 0px 4px 61px 0px rgba(0, 0, 0, 0.05);
@@ -195,6 +201,12 @@
 		&-control {
 			top: 30%;
 			background: rgba(0, 0, 0, 0.1);
+			transition: all .1s linear;
+
+			&:hover {
+				background: rgba(0, 0, 0, 0.3);
+			}
+
 			&-next {
 				right: 20px;
 			}

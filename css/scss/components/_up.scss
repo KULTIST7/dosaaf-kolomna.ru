@@ -1,0 +1,23 @@
+.up {
+  position: fixed;
+  right: 45px;
+  bottom: 45px;
+  z-index: 1000;
+  cursor: pointer;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
+
+  svg rect {
+    transition: all .1s linear;
+  }
+
+  &__call:hover svg rect {
+    fill-opacity: 0.7;
+  }
+
+  &__btn:hover svg rect {
+    fill-opacity: 0.5;
+  }
+}

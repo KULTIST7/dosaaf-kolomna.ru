@@ -1,6 +1,6 @@
 .stats {
 	position: relative;
-	background: url(../images/stats-bg.png);
+	background: url(../../images/stats-bg.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -128,7 +128,7 @@
 	.stats {
 		padding: 70px 0 10px;
 		margin: 0;
-		background-image: url(../images/stats-bg-480.png);
+		background-image: url(../../images/stats-bg-480.png);
 		&__picture {
 			&-1 {
 				order: 2;

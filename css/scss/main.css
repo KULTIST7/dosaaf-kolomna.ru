@@ -41,56 +41,56 @@
 /* stylelint-disable value-keyword-case */
 @font-face {
   font-family: "Kelson Sans";
-  src: url("../fonts/../fonts/KelsonSans/KelsonSans-400.woff2") format("woff2");
+  src: url("../fonts/../../fonts/KelsonSans/KelsonSans-400.woff2") format("woff2");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "Kelson Sans";
-  src: url("../fonts/../fonts/KelsonSans/KelsonSans-700.woff2") format("woff2");
+  src: url("../fonts/../../fonts/KelsonSans/KelsonSans-700.woff2") format("woff2");
   font-weight: 700;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("../fonts/../fonts/Gilroy/Gilroy-400.woff2") format("woff2");
+  src: url("../fonts/../../fonts/Gilroy/Gilroy-400.woff2") format("woff2");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("../fonts/../fonts/Gilroy/Gilroy-400-italic.woff2") format("woff2");
+  src: url("../fonts/../../fonts/Gilroy/Gilroy-400-italic.woff2") format("woff2");
   font-weight: 400;
   font-display: swap;
   font-style: italic;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("../fonts/../fonts/Gilroy/Gilroy-500.woff2") format("woff2");
+  src: url("../fonts/../../fonts/Gilroy/Gilroy-500.woff2") format("woff2");
   font-weight: 500;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("../fonts/../fonts/Gilroy/Gilroy-600.woff2") format("woff2");
+  src: url("../fonts/../../fonts/Gilroy/Gilroy-600.woff2") format("woff2");
   font-weight: 600;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("../fonts/../fonts/Gilroy/Gilroy-700.woff2") format("woff2");
+  src: url("../fonts/../../fonts/Gilroy/Gilroy-700.woff2") format("woff2");
   font-weight: 700;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "Bebas";
-  src: url("../fonts/../fonts/Bebas/Bebas-700.woff2") format("woff2");
+  src: url("../fonts/../../fonts/Bebas/Bebas-700.woff2") format("woff2");
   font-weight: 700;
   font-display: swap;
   font-style: normal;
@@ -202,7 +202,7 @@ input::placeholder {
   padding: 16px 46px 16px 34px;
   border-radius: 25px;
   display: flex;
-  background-image: url(../images/btn-bg.svg);
+  background-image: url(../../images/btn-bg.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -398,6 +398,28 @@ body::-webkit-scrollbar-thumb {
 }
 .nav-chain > a:hover {
   color: var(--dark-grey-color);
+}
+
+.up {
+  position: fixed;
+  right: 45px;
+  bottom: 45px;
+  z-index: 1000;
+  cursor: pointer;
+}
+@media (max-width: 1024px) {
+  .up {
+    display: none;
+  }
+}
+.up svg rect {
+  transition: all 0.1s linear;
+}
+.up__call:hover svg rect {
+  fill-opacity: 0.7;
+}
+.up__btn:hover svg rect {
+  fill-opacity: 0.5;
 }
 
 .header {
@@ -861,7 +883,7 @@ body::-webkit-scrollbar-thumb {
 }
 .types {
   padding-top: 120px;
-  background-image: url(../images/types-bg.png);
+  background-image: url(../../images/types-bg.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top center;
@@ -1081,7 +1103,7 @@ body::-webkit-scrollbar-thumb {
 }
 @media (max-width: 800px) {
   .types__categories__content > span {
-    padding-left: 8px;
+    padding: 18px 0 0 8px;
   }
 }
 .types__categories__content > span::before {
@@ -1163,7 +1185,7 @@ body::-webkit-scrollbar-thumb {
 @media (max-width: 768px) {
   .types {
     padding-top: 60px;
-    background: url(../images/types-bg-768.png), linear-gradient(var(--white-color), var(--body-bg-color));
+    background: url(../../images/types-bg-768.png), linear-gradient(var(--white-color), var(--body-bg-color));
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center 20%;
@@ -1364,7 +1386,7 @@ body::-webkit-scrollbar-thumb {
 }
 .stats {
   position: relative;
-  background: url(../images/stats-bg.png);
+  background: url(../../images/stats-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1470,7 +1492,7 @@ body::-webkit-scrollbar-thumb {
   .stats {
     padding: 70px 0 10px;
     margin: 0;
-    background-image: url(../images/stats-bg-480.png);
+    background-image: url(../../images/stats-bg-480.png);
   }
   .stats__picture-1 {
     order: 2;
@@ -1802,7 +1824,7 @@ body::-webkit-scrollbar-thumb {
 }
 .reviews__content .comms__slide {
   position: relative;
-  display: block;
+  display: block !important;
   width: 29%;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 14.97%, rgba(255, 255, 255, 0.9) 100%);
   box-shadow: 0px 4px 61px 0px rgba(0, 0, 0, 0.05);
@@ -1894,6 +1916,10 @@ body::-webkit-scrollbar-thumb {
 .comms__button-control {
   top: 30%;
   background: rgba(0, 0, 0, 0.1);
+  transition: all 0.1s linear;
+}
+.comms__button-control:hover {
+  background: rgba(0, 0, 0, 0.3);
 }
 .comms__button-control-next {
   right: 20px;
@@ -1988,7 +2014,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .footer {
-  background: url(../images/footer-bg.png);
+  background: url(../../images/footer-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
 }

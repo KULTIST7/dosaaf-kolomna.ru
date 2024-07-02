@@ -20,6 +20,14 @@ $(document).ready(() => {
 
         return false;
     });
+
+	$('.up__btn').on('click', ()=>{
+			const body = $("html, body");
+			body.animate({
+				scrollTop: 0
+			}, 500, 'swing');
+		}
+	);
 });
 
 /******/ (() => {
@@ -30,14 +38,22 @@ $(document).ready(() => {
 			const closeMenuBtn = document.querySelector(".menu__close");
 			const menu = document.querySelector(".menu");
 			const body = document.querySelector("body");
+			const bodyEl = document.body;
+			let lastScrollPos = 0;
 			if (openMenuBtn && closeMenuBtn) {
 				openMenuBtn.addEventListener("click", () => {
 					showMenu();
-					body.style.overflowY = "hidden";
+					lastScrollPos = window.pageYOffset;
+					bodyEl.style.overflow = 'hidden';
+					bodyEl.style.top = `-${lastScrollPos}px`;
+					bodyEl.style.width = '100%';
 				});
 				closeMenuBtn.addEventListener("click", () => {
 					hideMenu();
-					body.style.overflowY = "visible";
+					bodyEl.style.removeProperty('overflow');
+					bodyEl.style.removeProperty('top');
+					bodyEl.style.removeProperty('width');
+					window.scrollTo(0, lastScrollPos);
 				});
 			}
 			function hideMenu() {
