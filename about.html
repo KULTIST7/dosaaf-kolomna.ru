@@ -54,7 +54,7 @@
 										<img src="images/svg/whatsapp.svg" alt="" class="header__icon header__icon-whatsapp">
 									</a>
 								</div>
-								<a href="tel:" class="btn-reset header__call">
+								<a href="#" data-fancybox data-src="#order-a-call" class="btn-reset header__call">
 									<img
 										src="images/phone.svg"
 										class="image header__icon-phone"
@@ -397,7 +397,7 @@
 						</ul>
 					</div>
 					<div class="footer__container-phone menu__phone">
-						<a href="tel:" class="btn-reset footer__call">
+						<a href="#" data-fancybox data-src="#order-a-call" class="btn-reset footer__call">
 							<img
 								src="images/phone.svg"
 								class="image footer__icon-phone"
@@ -463,7 +463,7 @@
 							</ul>
 						</div>
 						<div class="footer__container-phone">
-							<a href="tel:" class="btn-reset footer__call">
+							<a href="#" data-fancybox data-src="#order-a-call" class="btn-reset footer__call">
 								<img
 									src="images/phone.svg"
 									class="image footer__icon-phone"
@@ -511,6 +511,17 @@
 					</div>
 				</div>
 			</footer>
+		</div>
+		<div class="popup-order" id="order-a-call" style="display: none">
+			<form>
+				<h2>заказать звонок </h2>
+				<input type="text" placeholder="Ваше имя">
+				<input type="tel" placeholder="Ваш Телефон">
+				<div class="popup-order__confirm">
+					<button class="btn-reset btn btn-primary">отправить</button>
+					<p>Нажимая на кнопку <span>«Отправить»</span>, вы даете согласие на обработку своих <a href="#">персональных данных</a></p>
+				</div>
+			</form>
 		</div>
 	</body>
 </html>
